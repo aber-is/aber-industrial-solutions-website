@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/swiper.min.css';
-import data from '../data/en.json';
+import data from '../data/main.json';
 
 window.onload = () => {
 	var mySlideshowSwiper = new Swiper('.hero-container', {

@@ -1,5 +1,9 @@
 const path = require('path');
-var data = require(path.resolve(__dirname, 'src/data/en.json'));
+var data = require(path.resolve(__dirname, 'src/data/main.json'));
+
+var sass = require('node-sass');
+var sassUtils = require('node-sass-utils')(sass);
+
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -24,7 +28,16 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				exclude: /node_modules/,
-				use: ['style-loader', 'css-loader', 'sass-loader'],
+				use: [
+					'style-loader',
+					'css-loader',
+					{
+						loader: 'sass-loader',
+						options: {
+							prependData: `$items: ${data.header.links.length};`,
+						},
+					},
+				],
 			},
 			{
 				test: /\.css$/,

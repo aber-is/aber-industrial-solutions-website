@@ -1,0 +1,39 @@
+@mixin references($primary-color, $secondary-color) {
+	#references {
+		padding: 0.3rem 0;
+		background-color: $primary-color;
+
+		> .wrapper {
+			margin: auto;
+			max-width: 1000px;
+			min-width: 80%;
+			text-align: center;
+
+			> h2 {
+				@include h2;
+
+				margin-bottom: 0.1rem;
+			}
+
+			> ul {
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				flex-wrap: wrap;
+
+				> li {
+					> a > img {
+						width: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		#references > .wrapper {
+			margin: auto;
+			max-width: 90%;
+		}
+	}
+}

@@ -1,7 +1,3 @@
-@import './mixins.scss';
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 :root {
 	--main-font: 'Open Sans', sans-serif;
 	--sub-font: 'Roboto', sans-serif;
@@ -34,6 +30,11 @@
 
 	--letter-spacing: normal;
 	--letter-spacing-0: 0;
+
+	--color-text-primary: #000;
+	--color-text-secondary: #444;
+	--color-background-primary: #fff;
+	--color-background-secondary: #e9edf2;
 }
 
 @media (max-width: 1024px) {
@@ -55,23 +56,6 @@
 	}
 }
 
-:root {
-	--color-white: #fff;
-	--color-black: #000;
-	--color-blackcurrant: #1a1529;
-	--color-neon-blue: #3e50f7;
-	--color-violent-violet: #2a1f41;
-	--color-reef: #c6f5b9;
-	--color-black-opacity02: rgba(0, 0, 0, 0.2);
-	--color-white-opacity07: hsla(0, 0%, 100%, 0.7);
-	--color-neon-blue-opacity90: rgba(62, 80, 247, 0.9);
-	--color-neon-blue-opacity05: rgba(62, 80, 247, 0.05);
-	--color-neon-blue-opacity10: rgba(62, 80, 247, 0.1);
-	--color-blackcurrant-opacity60: rgba(26, 21, 41, 0.6);
-	--color-regal-blue-opacity06: rgba(36, 60, 82, 0.06);
-	--color-paua-opacity80: rgba(37, 34, 74, 0.8);
-}
-
 html {
 	font-size: 5vw;
 }
@@ -91,15 +75,5 @@ html {
 @media (max-width: 480px) {
 	html {
 		font-size: 27vw;
-	}
-}
-
-body {
-	@include desc1;
-}
-
-@media (max-width: 1024px) {
-	body.fixed {
-		position: fixed;
 	}
 }

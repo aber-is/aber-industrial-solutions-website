@@ -1,0 +1,131 @@
+@mixin header($items) {
+	header {
+		position: fixed;
+		box-sizing: border-box;
+		width: 100%;
+		z-index: 10;
+		background-color: #fff;
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.17);
+	}
+
+	.navigation-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+		padding: 0.2rem 0.2rem;
+	}
+
+	.logo-item {
+		> a {
+			text-decoration: none;
+			color: #000;
+			> h1 {
+				@include h2;
+
+				margin-bottom: 0rem;
+			}
+
+			> p {
+				@include h4;
+			}
+		}
+	}
+
+	.link-item-container {
+		display: flex;
+		align-items: center;
+
+		> li {
+			display: flex;
+			padding: 0 0.2rem;
+			> a {
+				@include desc1;
+				text-decoration: none;
+			}
+
+			&:last-child > a {
+				@include button;
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.logo-item {
+			flex: 0 1 auto;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			> a {
+				> p {
+					display: none;
+				}
+			}
+		}
+
+		header .link-item-container {
+			display: flex;
+			align-items: center;
+
+			> li {
+				display: none;
+			}
+
+			&:after {
+				content: '☰';
+				@include h2;
+				padding-left: 0rem;
+			}
+		}
+
+		header.open {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+
+			nav {
+				height: 100%;
+			}
+
+			.link-item-container {
+				> li {
+					position: fixed;
+					display: flex;
+					padding: 0;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					> a {
+						@include h2;
+					}
+				}
+
+				&:after {
+					content: '⛌';
+					@include h2;
+					padding-left: 0rem;
+				}
+
+				@for $i from 1 through $items {
+					li:nth-child(#{$i}) {
+						top: #{45 + (60 / $items) * ($i - $items/2)}vh;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		.logo-item {
+			> a {
+				&:after {
+					content: 'ais';
+					display: flex;
+					@include h2;
+				}
+				> h1 {
+					display: none;
+				}
+			}
+		}
+	}
+}

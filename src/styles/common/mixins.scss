@@ -55,7 +55,7 @@
 @mixin button {
 	cursor: pointer;
 	position: relative;
-	border: 3px solid var(--color-violent-violet);
+	border: 3px solid var(--color-text-primary);
 	border-radius: 6px;
 	overflow: hidden;
 	text-align: center;
@@ -63,7 +63,7 @@
 	transition: color ease 0.25s;
 
 	&:hover {
-		color: var(--color-white);
+		color: #fff;
 	}
 
 	&::after {
@@ -79,7 +79,7 @@
 		height: 0;
 		bottom: 0;
 		left: 0;
-		background: var(--color-violent-violet);
+		background: var(--color-text-primary);
 		z-index: -1;
 		transition: height ease 0.25s;
 	}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './common/reset';
+@import './common/root';
+@import './common/mixins';
+
+@import './pages/header.scss';
+@import './pages/hero.scss';
+@import './pages/company.scss';
+@import './pages/services.scss';
+@import './pages/products.scss';
+@import './pages/references.scss';
+@import './pages/contacts.scss';
+
+// Default font
+body {
+	@include desc1;
+}
+
+// Mobile menu
+@media (max-width: 1024px) {
+	body.fixed {
+		position: fixed;
+	}
+}
+
+$primary-color: #fff;
+$secondary-color: #e9edf2;
+
+@include header($items);
+@include hero;
+@include company($primary-color, $secondary-color);
+@include services($secondary-color, $primary-color);
+@include products($primary-color, $secondary-color);
+@include references($secondary-color, $primary-color);
+@include contacts($primary-color, $secondary-color);
