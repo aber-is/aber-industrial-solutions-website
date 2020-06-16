@@ -1,0 +1,22 @@
+section#products
+	.wrapper
+		h2= products.name
+		p= products.description
+		each product in products.products
+			section(id=product.id)
+				.text
+					h3=product.name
+					each paragraph in product.description
+						p=paragraph
+					ul
+						each point in product.points
+							li=point
+				.products
+					.products-container.swiper-container
+						.products-wrapper.swiper-wrapper
+							each slide in product.slides
+								.products-slide.swiper-slide
+									img(src=require(`../images/products/${slide.id}.png`).default alt=slide.alt)
+						.products-pagination.swiper-pagination
+						.products-button-prev.swiper-button-prev
+						.products-button-next.swiper-button-next

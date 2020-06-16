@@ -1,0 +1,12 @@
+header
+	nav
+		ul.navigation-container
+			li.logo-item
+				a
+					h1= header.title
+					p= header.subtitle
+			.link-item-container
+				each link in header.links.reverse()
+					li
+						a.link-item(href=link.href)=link.name
+

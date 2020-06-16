@@ -1,0 +1,11 @@
+section#hero
+	.hero-container.swiper-container
+		.hero-wrapper.swiper-wrapper
+			each slide in hero.slides
+				.hero-slide.swiper-slide(style=`background-image: url(${require(`../images/hero/${slide.id}.png`).default});`)
+					.wrapper
+						h2=slide.title
+						p=slide.body
+		.hero-pagination.swiper-pagination
+		.hero-button-prev.swiper-button-prev
+		.hero-button-next.swiper-button-next

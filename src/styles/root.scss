@@ -1,0 +1,102 @@
+@import './mixins.scss';
+
+:root {
+	--main-font: 'Open Sans', sans-serif;
+	--sub-font: 'Roboto', sans-serif;
+	--sub-font-bold: 'Roboto', sans-serif;
+
+	--font-size-h1: 0.42rem;
+	--font-size-h2: 0.34rem;
+	--font-size-h3: 0.24rem;
+	--font-size-h4: 0.17rem;
+	--font-size-desc1: 0.16rem;
+	--font-size-desc2: 0.12rem;
+	--font-size-desc3: 0.22rem;
+
+	--font-weight-1: 100;
+	--font-weight-2: 200;
+	--font-weight-3: 300;
+	--font-weight-4: 400;
+	--font-weight-5: 500;
+	--font-weight-6: 600;
+	--font-weight-7: 700;
+
+	--line-height-0: 0;
+	--line-height-initial: initial;
+	--line-height-h1: 0.47rem;
+	--line-height-h2: 0.38rem;
+	--line-height-h3: 0.23rem;
+	--line-height-h3: 0.17rem;
+	--line-height-desc1: 0.28rem;
+	--line-height-desc2: 0.16rem;
+	--line-height-desc3: 0.32rem;
+
+	--letter-spacing: normal;
+	--letter-spacing-0: 0;
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--font-size-h1: 0.26rem;
+		--font-size-h2: 0.26rem;
+		--font-size-h3: 0.18rem;
+
+		--line-height-h1: 0.29rem;
+		--line-height-h2: 0.29rem;
+		--line-height-desc1: 0.25rem;
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		--line-height-h1: 0.29rem;
+		--line-height-h3: 0.23rem;
+	}
+}
+
+:root {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-blackcurrant: #1a1529;
+	--color-neon-blue: #3e50f7;
+	--color-violent-violet: #2a1f41;
+	--color-reef: #c6f5b9;
+	--color-black-opacity02: rgba(0, 0, 0, 0.2);
+	--color-white-opacity07: hsla(0, 0%, 100%, 0.7);
+	--color-neon-blue-opacity90: rgba(62, 80, 247, 0.9);
+	--color-neon-blue-opacity05: rgba(62, 80, 247, 0.05);
+	--color-neon-blue-opacity10: rgba(62, 80, 247, 0.1);
+	--color-blackcurrant-opacity60: rgba(26, 21, 41, 0.6);
+	--color-regal-blue-opacity06: rgba(36, 60, 82, 0.06);
+	--color-paua-opacity80: rgba(37, 34, 74, 0.8);
+}
+
+body.fixed {
+	position: fixed;
+}
+
+html {
+	font-size: 5vw;
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 6.94444vw;
+	}
+}
+
+@media (max-width: 1024px) {
+	html {
+		font-size: 13.02083vw;
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 27vw;
+	}
+}
+
+body {
+	@include desc1;
+}

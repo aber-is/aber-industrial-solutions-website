@@ -1,0 +1,163 @@
+{
+	"header": {
+		"title": "aber.industrial.solutions",
+		"subtitle": "SCADA Softwareentwicklung Qualitätssicherung",
+		"links": [
+			{ "name": "Leistungen", "id": "", "class": "" },
+			{ "name": "Produkte", "id": "", "class": "" },
+			{ "name": "Unternehmen", "id": "", "class": "" },
+			{ "name": "Referenzen", "id": "", "class": "" },
+			{ "name": "Karriere", "id": "", "class": "" },
+			{ "name": "Kontakt", "id": "", "class": "button" }
+		]
+	},
+	"hero": {
+		"id": "hero",
+		"slides": [
+			{
+				"title": "HMI Interfaces",
+				"body": "Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
+				"id": "hmi",
+				"alt": "Image of HMI"
+			},
+			{
+				"title": "",
+				"body": "",
+				"id": "workers",
+				"alt": "Image of factory workers"
+			},
+			{
+				"title": "",
+				"body": "",
+				"id": "factory",
+				"alt": "Image of factory"
+			}
+		]
+	},
+	"services": {
+		"name": "Leistungen",
+		"id": "services",
+		"description": "",
+		"services": [
+			{
+				"id": "hmi",
+				"name": "HMI Visualisierung",
+				"description": [
+					"Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
+					"Wir bieten spezielle Visualisierungslösungen, die bestehende Systeme und Standards ergänzen. In dem Fall von Migration zwischen unterschiedlichen Visualisierungsstandards, haben wir Erfahrung in der Umstellung von kompletten Gewerke. Wir bieten im Bereich Industrielle HMI Visualisierung die folgenden Leistungen an:"
+				],
+				"points": [
+					"Standardisierung",
+					"Beratung",
+					"System Tools",
+					"Daimler Visualisierung Standard",
+					"integra Designer Pro",
+					"Fördertechnik",
+					"Verfahrungstechnik",
+					"Applikationstechnik",
+					"Mechanisierung",
+					"TGA Gebäudetechnik",
+					"Chemieanlage"
+				],
+				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+			}
+		]
+	},
+	"products": {
+		"name": "Produkte",
+		"id": "products",
+		"description": "",
+		"products": [
+			{
+				"name": "MIRA",
+				"id": "mira",
+				"description": [
+					"Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
+					"Wir bieten spezielle Visualisierungslösungen, die bestehende Systeme und Standards ergänzen. In dem Fall von Migration zwischen unterschiedlichen Visualisierungsstandards, haben wir Erfahrung in der Umstellung von kompletten Gewerke. Wir bieten im Bereich Industrielle HMI Visualisierung die folgenden Leistungen an:"
+				],
+				"points": [
+					"Ursachenauswertung zur anstehenden",
+					"Störungen",
+					"QR-Code Scannen von Technischen",
+					"Plätzen",
+					"Anzeige der anstehenden und geschlossenen Störungen",
+					"Stördokumentation",
+					"Liste der Folgemaßnahmen",
+					"Textnotizen, Bild-, Video- und Audio-",
+					"Aufzeichnungen zur Anlage",
+					"Bild Annotation",
+					"Export und Import von Bilder und PDF",
+					"Schichtübergabe",
+					"Zentraler Windows-Server und",
+					"Administration"
+				],
+				"slides": [{ "id": "mira", "alt": "MIRA Demonstration" }]
+			}
+		]
+	},
+	"company": {
+		"name": "Unternehmen",
+		"id": "company",
+		"description": "aber.industrial.solutions blickt auf mehr als 30 Jahre Erfahrung im Bereich Visualisierung und Softwareentwicklung zurück. Wir sind ein mittelständiges Unternehmen, das im Bereich App und Software Entwicklung, Visualisierung in der Automobil- und Automatisierungstechnik, Industrie 4.0 / Digital Fabrik Tools, Leittechnik, Prozessvisualisierung und Standardisierung spezialisiert ist. Wir sind stolz auf unsere Qualität, Zuverlässigkeit, Kompetenz und zufriedenen Kunden."
+	},
+	"references": {
+		"name": "Referenzen",
+		"id": "references",
+		"references": [
+			{
+				"name": "Dürr",
+				"id": "durr",
+				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Daimler",
+				"id": "daimler",
+				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Siemens",
+				"id": "siemens",
+				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Eisenmann",
+				"id": "eisenmann",
+				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Voith",
+				"id": "voith",
+				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Rudolf Fritz",
+				"id": "rudolf_fritz",
+				"website": "https://www.durr.com/"
+			}
+		]
+	},
+	"contacts": {
+		"name": "Kontakt",
+		"id": "contacts",
+		"contacts": [
+			{
+				"name": "Mark Aber",
+				"id": "mark_aber",
+				"email": "aber@aber-is.de",
+				"phone": "+44 1892 662177"
+			},
+			{
+				"name": "Fabian Sauer",
+				"id": "fabian_sauer",
+				"email": "aber@aber-is.de",
+				"phone": "+44 1892 662177"
+			},
+			{
+				"name": "Günter Bernhart",
+				"id": "gunter_bernhart",
+				"email": "aber@aber-is.de",
+				"phone": "+44 1892 662177"
+			}
+		]
+	}
+}

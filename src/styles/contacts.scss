@@ -1,0 +1,55 @@
+@import './root.scss';
+@import './mixins.scss';
+
+#contacts {
+	padding: 0.3rem 0;
+	background-color: #fff;
+
+	> .wrapper {
+		margin: auto;
+		max-width: 1000px;
+		min-width: 80%;
+		text-align: center;
+
+		> h2 {
+			@include h2;
+
+			margin-bottom: 0.3rem;
+		}
+
+		> ul {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+
+			> li {
+				padding: 0.5rem;
+
+				> img {
+					display: inline-block;
+					width: 2rem;
+					height: 2rem;
+					border-radius: 50%;
+					margin-bottom: 0.2rem;
+				}
+
+				> h3 {
+					@include h3;
+					margin-bottom: 0.2rem;
+				}
+
+				> p {
+					@include desc1;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	#contact > .wrapper {
+		margin: auto;
+		max-width: 90%;
+	}
+}

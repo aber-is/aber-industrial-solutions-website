@@ -1,0 +1,92 @@
+@mixin h1 {
+	color: var(--color-black);
+	font-family: var(--main-font);
+	font-size: var(--font-size-h1);
+	font-weight: var(--font-weight-4);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height-h1);
+}
+
+@mixin h2 {
+	color: var(--color-black);
+	font-family: var(--main-font);
+	font-size: var(--font-size-h2);
+	font-weight: var(--font-weight-4);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height-h2);
+}
+
+@mixin h3 {
+	color: var(--color-black);
+	font-family: var(--main-font);
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-4);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height-h3);
+}
+
+@mixin h4 {
+	color: var(--color-black);
+	font-family: var(--main-font);
+	font-size: var(--font-size-h4);
+	font-weight: var(--font-weight-4);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height-h4);
+}
+
+@mixin desc1 {
+	color: var(--color-black);
+	font-family: var(--main-font);
+	font-size: var(--font-size-desc1);
+	font-weight: var(--font-weight-4);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height-desc1);
+}
+
+@mixin desc2 {
+	color: var(--color-black);
+	font-family: var(--main-font);
+	font-size: var(--font-size-desc2);
+	font-weight: var(--font-weight-4);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height-desc2);
+}
+
+@mixin button {
+	cursor: pointer;
+	position: relative;
+	border: 3px solid var(--color-violent-violet);
+	border-radius: 6px;
+	overflow: hidden;
+	text-align: center;
+	padding: 4px 7px;
+	transition: color ease 0.25s;
+
+	&:hover {
+		color: var(--color-white);
+	}
+
+	&::after {
+		height: 0;
+		top: 0;
+		bottom: auto;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 0;
+		bottom: 0;
+		left: 0;
+		background: var(--color-violent-violet);
+		z-index: -1;
+		transition: height ease 0.25s;
+	}
+
+	&:hover::after {
+		height: 100%;
+		top: auto;
+		bottom: 0;
+	}
+}

@@ -1,0 +1,7 @@
+section#references
+	.wrapper
+		h2=references.name
+		ul
+			each reference in references.references
+				li
+					img(src=require(`../images/references/${reference.id}.png`).default alt=reference.name href=reference.website)

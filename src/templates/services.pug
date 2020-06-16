@@ -1,0 +1,22 @@
+section#services
+	.wrapper
+		h2= services.name
+		p= services.description
+		each service in services.services
+			section(id=service.id)
+				.text
+					h3=service.name
+					each paragraph in service.description
+						p=paragraph
+					ul
+						each point in service.points
+							li= point
+				.services
+					.services-container.swiper-container
+						.services-wrapper.swiper-wrapper
+							each slide in service.slides
+								.services-slide.swiper-slide
+									img(src=require(`../images/services/${slide.id}.png`).default alt=slide.alt)
+						.services-pagination.swiper-pagination
+						.services-button-prev.swiper-button-prev
+						.services-button-next.swiper-button-next

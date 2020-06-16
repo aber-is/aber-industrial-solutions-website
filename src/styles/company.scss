@@ -1,0 +1,29 @@
+@import './root.scss';
+@import './mixins.scss';
+
+#company {
+	padding: 0.3rem 0;
+
+	> .wrapper {
+		margin: auto;
+		max-width: 1000px;
+		min-width: 80%;
+
+		> h2 {
+			@include h2;
+
+			margin-bottom: 0.1rem;
+		}
+
+		> p {
+			@include desc1;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	#company > .wrapper {
+		margin: auto;
+		max-width: 90%;
+	}
+}
