@@ -1,9 +1,6 @@
 const path = require('path');
 var data = require(path.resolve(__dirname, 'src/data/main.json'));
 
-var sass = require('node-sass');
-var sassUtils = require('node-sass-utils')(sass);
-
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -48,6 +45,9 @@ module.exports = {
 				use: ['file-loader'],
 			},
 		],
+	},
+	optimization: {
+		minimize: true,
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
