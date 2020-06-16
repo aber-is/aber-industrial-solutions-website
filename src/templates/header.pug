@@ -8,5 +8,5 @@ header
 			.link-item-container
 				each link in header.links.reverse()
 					li
-						a.link-item(href=link.href)=link.name
+						a.link-item(href=`#${link.id}`)=link.name
 

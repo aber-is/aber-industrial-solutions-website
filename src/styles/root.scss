@@ -1,5 +1,7 @@
 @import './mixins.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
 	--main-font: 'Open Sans', sans-serif;
 	--sub-font: 'Roboto', sans-serif;
@@ -26,7 +28,6 @@
 	--line-height-h1: 0.47rem;
 	--line-height-h2: 0.38rem;
 	--line-height-h3: 0.23rem;
-	--line-height-h3: 0.17rem;
 	--line-height-desc1: 0.28rem;
 	--line-height-desc2: 0.16rem;
 	--line-height-desc3: 0.32rem;
@@ -71,10 +72,6 @@
 	--color-paua-opacity80: rgba(37, 34, 74, 0.8);
 }
 
-body.fixed {
-	position: fixed;
-}
-
 html {
 	font-size: 5vw;
 }
@@ -99,4 +96,10 @@ html {
 
 body {
 	@include desc1;
+}
+
+@media (max-width: 1024px) {
+	body.fixed {
+		position: fixed;
+	}
 }
