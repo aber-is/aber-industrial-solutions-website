@@ -1,0 +1,36 @@
+@mixin imprint($primary-color, $secondary-color) {
+	#imprint {
+		overflow: hidden;
+		padding: 0.3rem 0;
+		background-color: $primary-color;
+
+		> .wrapper {
+			margin: auto;
+			max-width: 1000px;
+			min-width: 80%;
+			text-align: center;
+
+			> h2 {
+				@include h2;
+				margin-bottom: 0.1rem;
+			}
+
+			> h3 {
+				@include h3;
+				margin: 0.15rem 0;
+			}
+
+			> p {
+				@include desc1;
+				margin-bottom: 0.05rem;
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		#services > .wrapper {
+			margin: auto;
+			max-width: 90%;
+		}
+	}
+}

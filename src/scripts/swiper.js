@@ -6,6 +6,10 @@ window.onload = () => {
 	var mySlideshowSwiper = new Swiper('.hero-container', {
 		direction: 'horizontal',
 		loop: true,
+		preloadImages: false,
+		lazy: {
+			loadPrevNext: true,
+		},
 
 		autoplay: {
 			delay: 5000,

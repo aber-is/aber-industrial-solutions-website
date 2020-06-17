@@ -1,0 +1,7 @@
+section#imprint
+	.wrapper
+		h2=imprint.name
+		each section in imprint.sections
+			h3=section.title
+			each paragraph in section.body
+				p=paragraph

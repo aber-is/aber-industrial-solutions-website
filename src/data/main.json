@@ -3,45 +3,57 @@
 		"title": "aber.industrial.solutions",
 		"subtitle": "SCADA Softwareentwicklung Qualitätssicherung",
 		"links": [
-			{ "name": "Leistungen", "id": "services", "class": "" },
-			{ "name": "Produkte", "id": "products", "class": "" },
-			{ "name": "Unternehmen", "id": "company", "class": "" },
-			{ "name": "Referenzen", "id": "references", "class": "" },
+			{ "name": "Kontakt", "id": "contacts", "class": "" },
 			{ "name": "Karriere", "id": "", "class": "" },
-			{ "name": "Kontakt", "id": "contacts", "class": "button" }
+			{ "name": "Referenzen", "id": "references", "class": "" },
+			{ "name": "Produkte", "id": "products", "class": "" },
+			{ "name": "Leistungen", "id": "services", "class": "" },
+			{ "name": "Unternehmen", "id": "company", "class": "" }
 		]
 	},
 	"hero": {
 		"id": "hero",
 		"slides": [
 			{
-				"title": "HMI Interfaces",
-				"body": "Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
-				"id": "hmi",
+				"title": "SCADA Systeme",
+				"body": "Über 30 Jahre erfahrunghaben im Bereich industrielle Visualisierungen",
+				"id": "scada",
 				"alt": "Image of HMI"
 			},
 			{
-				"title": "",
-				"body": "",
+				"title": "Qualitätssicherung",
+				"body": "Anlagenabnahme, Gefährdungsbeurteilungen und Dokumentation",
 				"id": "workers",
 				"alt": "Image of factory workers"
 			},
 			{
-				"title": "",
-				"body": "",
+				"title": "SCADA Spezialisten in der Automobilindustrie ",
+				"body": "Leittechnik, Rohbau, Oberfläche, Montage, TGA, Hochregallage, Hochzeitsstation, Transportverfolgung, APT",
 				"id": "factory",
 				"alt": "Image of factory"
+			},
+			{
+				"title": "Softwareentwicklung",
+				"body": "Desktop & Mobil Apps, Fullstack Web, Client/Server, TCP, UDP, HTTP, Datenbanken, C++, C#, Pascal, SWIFT",
+				"id": "software",
+				"alt": "software screen"
 			}
 		]
 	},
 	"services": {
 		"name": "Leistungen",
 		"id": "services",
-		"description": "",
+		"description": [
+			"Industrielle HMI Visualisierung",
+			"Leittechnik",
+			"Automobil HMI / Leittechnik Spezialisten",
+			"Qualitätssicherung",
+			"Softwareentwicklung"
+		],
 		"services": [
 			{
 				"id": "hmi",
-				"name": "HMI Visualisierung",
+				"name": "Industrielle HMI Visualisierung",
 				"description": [
 					"Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
 					"Wir bieten spezielle Visualisierungslösungen, die bestehende Systeme und Standards ergänzen. In dem Fall von Migration zwischen unterschiedlichen Visualisierungsstandards, haben wir Erfahrung in der Umstellung von kompletten Gewerke. Wir bieten im Bereich Industrielle HMI Visualisierung die folgenden Leistungen an:"
@@ -58,6 +70,86 @@
 					"Mechanisierung",
 					"TGA Gebäudetechnik",
 					"Chemieanlage"
+				],
+				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+			},
+			{
+				"id": "controlTechnology",
+				"name": "Leittechnik",
+				"description": [
+					"Wir bieten im Bereich Leittechnik die folgenden Leistungen an:"
+				],
+				"points": [
+					"Beratung",
+					"System Tools",
+					"Andon Board",
+					"Sonderlösungen",
+					"Datenbank Anpassungen",
+					"iPortal Template Entwicklung",
+					"Integra iPDesigner",
+					"Rohbau",
+					"Oberfläche",
+					"Montage",
+					"TGA Gebäudetechnik"
+				],
+				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+			},
+			{
+				"id": "automotivSpecialists",
+				"name": "Automobil HMI / Leittechnik Spezialisten",
+				"description": [
+					"Wir sind in den folgenden Bereich der Automobilindustrie für HMI, SCADA und Leittechnik tätig:"
+				],
+				"points": [
+					"Rohbau",
+					"Oberfläche",
+					"Montage",
+					"TGA Gebäudetechnik",
+					"Hochregallage",
+					"Hochzeitsstation",
+					"Transportverfolgung",
+					"Parametrierung"
+				],
+				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+			},
+			{
+				"id": "QS",
+				"name": "Qualitätssicherung",
+				"description": [
+					"Abnahmen von Anlagen mit den folgenden Tätigkeiten:"
+				],
+				"points": [
+					"Dokumentation (Aufbauplan, Stromlaufplan, Klemmenplan, Stückliste, Bedienungsanleitung)",
+					"Sicherheitsrelevante Dokumente (Messprotokoll nach BGV A3, CE-Bescheinigung, Risikobeurteilung MSR-Technik)",
+					"Schaltschrankaufbau und Anlageninstallation",
+					"Beschilderungen",
+					"Verkabelung",
+					"Anlagenbedienung",
+					"Funktionstest der Anlage",
+					"Gefährdungsbeurteilungen von Anlagen",
+					"Dokumentation"
+				],
+				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+			},
+			{
+				"id": "softwareDevelopement",
+				"name": "Softwareentwicklung",
+				"description": [
+					"Wir entwickeln Software in den folgenden Bereiche:"
+				],
+				"points": [
+					"Desktop Apps",
+					"Mobil Apps",
+					"Fullstack Web",
+					"Client/Server",
+					"TCP",
+					"UDP",
+					"HTTP",
+					"Datenbanken",
+					"C++",
+					"C#",
+					"Pascal",
+					"SWIFT"
 				],
 				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
 			}
@@ -91,6 +183,7 @@
 					"Zentraler Windows-Server und",
 					"Administration"
 				],
+				"technologies": ["Swift", "C#"],
 				"slides": [{ "id": "mira", "alt": "MIRA Demonstration" }]
 			}
 		]
@@ -133,6 +226,11 @@
 				"name": "Rudolf Fritz",
 				"id": "rudolf_fritz",
 				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Tessmar Gebäudeleittechnik GmbH",
+				"id": "tessmar",
+				"website": "http://gebaeudeleittechnik.biz/unternehmen/unternehmen.htm"
 			}
 		]
 	},
@@ -144,19 +242,68 @@
 				"name": "Mark Aber",
 				"id": "mark_aber",
 				"email": "aber@aber-is.de",
-				"phone": "+44 1892 662177"
+				"phone": "+49 7224 995613"
 			},
 			{
 				"name": "Fabian Sauer",
 				"id": "fabian_sauer",
-				"email": "aber@aber-is.de",
-				"phone": "+44 1892 662177"
+				"email": "fabian.sauer@aber-is.de",
+				"phone": "+49 151 5811 6548"
 			},
 			{
 				"name": "Günter Bernhart",
 				"id": "gunter_bernhart",
-				"email": "aber@aber-is.de",
-				"phone": "+44 1892 662177"
+				"email": "g.bernhart@aber-is.de",
+				"phone": "+49 151 5812 2294"
+			}
+		]
+	},
+	"imprint": {
+		"name": "Impressum",
+		"sections": [
+			{
+				"title": "Angaben gemäß § 5 TMG",
+				"body": [
+					"Mark Aber",
+					"Geschäftführer",
+					"Kelterbergstr. 5",
+					"76593 Gernsbach"
+				]
+			},
+			{
+				"title": "Kontakt",
+				"body": [
+					"Telefon:  ́+49 7224 995 61",
+					"Telefax:  ́+49 7224 995 68",
+					"E-Mail: aber@aber-is.de"
+				]
+			},
+			{
+				"title": "Umsatzsteuer-ID",
+				"body": [
+					"Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
+					"DE 17 899 4004"
+				]
+			},
+			{
+				"title": "Berufsbezeichnung und berufsrechtliche Regelungen",
+				"body": ["Berufsbezeichnung: Ingeneuer"]
+			},
+			{
+				"title": "Angaben zur Berufshaftpflichtversicherung",
+				"body": [
+					"Name und Sitz des Versicherers:",
+					"NÜRNBERGER Allgemeine Versicherungs-AG",
+					"Ostendstraße 100",
+					"90334 Nürnberg"
+				]
+			},
+			{
+				"title": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+				"body": [
+					"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+					"Quelle:https://www.e-recht24.de"
+				]
 			}
 		]
 	}

@@ -11,12 +11,19 @@ section#products
 					ul
 						each point in product.points
 							li=point
+					.technologies
+						h4 Technologien
+						ul
+							each technology in product.technologies
+								li=technology
+
 				.products
 					.products-container.swiper-container
 						.products-wrapper.swiper-wrapper
 							each slide in product.slides
 								.products-slide.swiper-slide
-									img(src=require(`../images/products/${slide.id}.png`).default alt=slide.alt)
+									img(src=require(`../images/products/${slide.id}.png`).default alt=slide.alt loading="lazy")
 						.products-pagination.swiper-pagination
 						.products-button-prev.swiper-button-prev
 						.products-button-next.swiper-button-next
+			hr

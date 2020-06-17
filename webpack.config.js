@@ -6,9 +6,17 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+	.BundleAnalyzerPlugin;
+
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+	entry: './src/index.js',
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: '[name].js',
+	},
 	optimization: {
 		minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
 	},
@@ -39,6 +47,7 @@ module.exports = {
 				test: /\.scss$/,
 				exclude: /node_modules/,
 				use: [
+					'style-loader',
 					{
 						loader: MiniCssExtractPlugin.loader,
 						options: {
@@ -68,7 +77,21 @@ module.exports = {
 			{
 				test: /\.(png|svg|jpg|gif)$/,
 				exclude: /node_modules/,
-				use: ['file-loader'],
+				use: [
+					'file-loader',
+					{
+						loader: 'image-webpack-loader',
+						options: {
+							mozjpeg: {
+								progressive: true,
+								quality: 65,
+							},
+							optipng: {
+								enable: true,
+							},
+						},
+					},
+				],
 			},
 		],
 	},

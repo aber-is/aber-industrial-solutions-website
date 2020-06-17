@@ -1,5 +1,6 @@
 @mixin services($primary-color, $secondary-color) {
 	#services {
+		overflow: hidden;
 		padding: 0.3rem 0;
 		background-color: $primary-color;
 
@@ -25,7 +26,8 @@
 				grid-template-rows: 1fr 1fr;
 				grid-template-columns: 1fr 1fr;
 				row-gap: 0;
-				column-gap: 0.3rem;
+				column-gap: 0.6rem;
+				margin: 0.4rem 0;
 				width: 100%;
 
 				> .text {
@@ -36,6 +38,7 @@
 
 					> h3 {
 						@include h3;
+						font-weight: var(--font-weight-6);
 						margin-bottom: 0.15rem;
 					}
 
@@ -90,6 +93,34 @@
 							0 6px 6px rgba(0, 0, 0, 0.23);
 						width: 300px;
 					}
+				}
+			}
+
+			> hr {
+				border-top: 2px solid #878787;
+			}
+
+			> hr:last-child {
+				display: none;
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		$services: 5;
+		@for $i from 1 to $services {
+			$even: $i%2 == 0;
+			#services > .wrapper > section:nth-of-type(#{$i + 1}) {
+				//background-color: if($even, $primary-color, $secondary-color);
+
+				> .text {
+					grid-column-start: if($even, 1, 2);
+					grid-column-end: if($even, 2, 3);
+				}
+
+				> .services {
+					grid-column-start: if($even, 2, 1);
+					grid-column-end: if($even, 3, 2);
 				}
 			}
 		}

@@ -1,5 +1,3 @@
-// Import html
-import './index.pug';
 // Import styles
 import './styles/index.scss';
 // Import scripts
