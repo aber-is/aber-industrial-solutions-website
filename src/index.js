@@ -1,5 +1,3 @@
-// Import data
-import './data/main.json';
 // Import html
 import './index.pug';
 // Import styles

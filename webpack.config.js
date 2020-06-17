@@ -1,17 +1,30 @@
 const path = require('path');
-var data = require(path.resolve(__dirname, 'src/data/main.json'));
-
+const webpack = require('webpack');
+const data = require(path.resolve(__dirname, 'src/data/main.json'));
+const TerserJSPlugin = require('terser-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+	optimization: {
+		minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+	},
+	plugins: [
+		new HtmlWebPackPlugin({
+			template: path.resolve(__dirname, 'src/index.pug'),
+			filename: path.resolve(__dirname, 'dist/index.html'),
+			templateParameters: data,
+		}),
+		new MiniCssExtractPlugin({
+			filename: devMode ? '[name].css' : '[name].[hash].css',
+			chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+		}),
+	],
 	module: {
 		rules: [
-			{
-				test: /\.html$/,
-				exclude: /index\.html$/,
-				loader: 'raw',
-			},
 			{
 				test: /\.js$/,
 				exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
@@ -26,8 +39,19 @@ module.exports = {
 				test: /\.scss$/,
 				exclude: /node_modules/,
 				use: [
-					'style-loader',
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							hmr: devMode,
+						},
+					},
 					'css-loader',
+					{
+						loader: 'postcss-loader',
+						options: {
+							options: {},
+						},
+					},
 					{
 						loader: 'sass-loader',
 						options: {
@@ -48,19 +72,7 @@ module.exports = {
 			},
 		],
 	},
-	optimization: {
-		minimize: true,
-	},
-	plugins: [
-		new HtmlWebPackPlugin({
-			template: path.resolve(__dirname, 'src/index.pug'),
-			filename: path.resolve(__dirname, 'dist/index.html'),
-			templateParameters: data,
-		}),
-		new MiniCssExtractPlugin(),
-	],
 	devServer: {
 		contentBase: path.resolve(__dirname, 'dist/'),
-		open: true,
 	},
 };
