@@ -4,7 +4,7 @@ section#hero
 			each slide in hero.slides
 				.hero-slide.swiper-slide.swiper-lazy(data-background=require(`../images/hero/${slide.id}.jpg`).default)
 					.swiper-lazy-preloader
-					.wrapper
+					.wrapper.hidden
 						h2=slide.title
 						p=slide.body
 		.hero-pagination.swiper-pagination

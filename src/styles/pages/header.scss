@@ -61,10 +61,8 @@
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
-			> a {
-				> p {
-					display: none;
-				}
+			> a > p {
+				display: none;
 			}
 		}
 

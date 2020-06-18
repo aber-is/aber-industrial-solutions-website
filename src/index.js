@@ -176,9 +176,15 @@ const initScrollHandle = () => {
 		}
 	});
 };
+const showHeroWrappers = () => {
+	document
+		.querySelectorAll('.hero-slide > .wrapper')
+		.forEach((wrapper) => wrapper.classList.remove('hidden'));
+};
 
 window.addEventListener('resize', changeMainPadding);
 window.addEventListener('load', initSwipers);
 window.addEventListener('load', initScrollHandle);
 window.addEventListener('load', changeMainPadding);
+window.addEventListener('load', showHeroWrappers);
 button.addEventListener('click', handleMobileMenuClick);
