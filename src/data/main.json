@@ -6,7 +6,7 @@
 			{ "name": "Kontakt", "id": "contacts", "class": "" },
 			{ "name": "Karriere", "id": "", "class": "" },
 			{ "name": "Referenzen", "id": "references", "class": "" },
-			{ "name": "Produkte", "id": "products", "class": "" },
+			{ "name": "Fallstudien", "id": "products", "class": "" },
 			{ "name": "Leistungen", "id": "services", "class": "" },
 			{ "name": "Unternehmen", "id": "company", "class": "" }
 		]
@@ -28,14 +28,14 @@
 			},
 			{
 				"title": "SCADA Spezialisten in der Automobilindustrie ",
-				"body": "Leittechnik, Rohbau, Oberfläche, Montage, TGA, Hochregallage, Hochzeitsstation, Transportverfolgung, APT",
-				"id": "factory",
+				"body": "iPortal, Leittechnik, Rohbau, Oberfläche, Montage, TGA, Hochregallage, Hochzeitsstation, Transportverfolgung, APT",
+				"id": "automobile-assembly-line",
 				"alt": "Image of factory"
 			},
 			{
 				"title": "Softwareentwicklung",
 				"body": "Desktop & Mobil Apps, Fullstack Web, Client/Server, TCP, UDP, HTTP, Datenbanken, C++, C#, Pascal, SWIFT",
-				"id": "software",
+				"id": "software-developement",
 				"alt": "software screen"
 			}
 		]
@@ -44,13 +44,35 @@
 		"name": "Leistungen",
 		"id": "services",
 		"description": [
-			"Industrielle HMI Visualisierung",
 			"Leittechnik",
+			"Industrielle HMI Visualisierung",
 			"Automobil HMI / Leittechnik Spezialisten",
 			"Qualitätssicherung",
 			"Softwareentwicklung"
 		],
 		"services": [
+			{
+				"id": "control-technology",
+				"name": "Leittechnik iPortal",
+				"description": [
+					"Wir bieten im Bereich Leittechnik die folgenden Leistungen an:"
+				],
+				"points": [
+					"Daimler AG integra iPortal",
+					"iPDesigner",
+					"iPortal Template Entwicklung",
+					"Beratung",
+					"System Tools",
+					"Andon Board",
+					"Sonderlösungen",
+					"TGA Gebäudetechnik",
+					"Rohbau",
+					"Oberfläche",
+					"Montage",
+					"Datenbank Anpassungen"
+				],
+				"slides": [{ "id": "iportal-mo-hambach", "alt": "iportal DAG Hambach" }]
+			},
 			{
 				"id": "hmi",
 				"name": "Industrielle HMI Visualisierung",
@@ -71,31 +93,10 @@
 					"TGA Gebäudetechnik",
 					"Chemieanlage"
 				],
-				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+				"slides": [{ "id": "marriage-station", "alt": "Hochzeitsstation Visu" }]
 			},
 			{
-				"id": "controlTechnology",
-				"name": "Leittechnik",
-				"description": [
-					"Wir bieten im Bereich Leittechnik die folgenden Leistungen an:"
-				],
-				"points": [
-					"Beratung",
-					"System Tools",
-					"Andon Board",
-					"Sonderlösungen",
-					"Datenbank Anpassungen",
-					"iPortal Template Entwicklung",
-					"Integra iPDesigner",
-					"Rohbau",
-					"Oberfläche",
-					"Montage",
-					"TGA Gebäudetechnik"
-				],
-				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
-			},
-			{
-				"id": "automotivSpecialists",
+				"id": "automotiv-specialists",
 				"name": "Automobil HMI / Leittechnik Spezialisten",
 				"description": [
 					"Wir sind in den folgenden Bereich der Automobilindustrie für HMI, SCADA und Leittechnik tätig:"
@@ -104,6 +105,7 @@
 					"Rohbau",
 					"Oberfläche",
 					"Montage",
+					"Applikationstechnik",
 					"TGA Gebäudetechnik",
 					"Hochregallage",
 					"Hochzeitsstation",
@@ -111,6 +113,24 @@
 					"Parametrierung"
 				],
 				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+			},
+			{
+				"id": "daimler-specialists",
+				"name": "Spezialisten für Daimler AG integra Visualisierung und Leittechnik",
+				"description": [
+					"Wir haben Anlagen für die folgenden Werke projektiert:"
+				],
+				"points": [
+					"Bremen, DE",
+					"East London, SA",
+					"Gaggenau, DE",
+					"Hambach, FR",
+					"Kecskemét, HU",
+					"Rastatt, DE",
+					"Sindelfngen, DE",
+					"Wörth, DE"
+				],
+				"slides": [{ "id": "andon-board", "alt": "Andon board" }]
 			},
 			{
 				"id": "QS",
@@ -129,7 +149,10 @@
 					"Gefährdungsbeurteilungen von Anlagen",
 					"Dokumentation"
 				],
-				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+				"slides": [
+					{ "id": "qs", "alt": "Qualitätssicherung" },
+					{ "id":"system-acceptance", "alt": "Abnahme" }
+				]
 			},
 			{
 				"id": "softwareDevelopement",
@@ -151,40 +174,35 @@
 					"Pascal",
 					"SWIFT"
 				],
-				"slides": [{ "id": "hmi", "alt": "HMI Demonstration" }]
+				"slides": [{ "id": "elvi", "alt": "ELVI Vorbeugendeinstandhaltung" }]
 			}
 		]
 	},
 	"products": {
-		"name": "Produkte",
+		"name": "Fallstudien",
 		"id": "products",
-		"description": "",
+		"description": "MIRA, iPortal, Andon Board, Ressourcen Management",
 		"products": [
 			{
 				"name": "MIRA",
 				"id": "mira",
 				"description": [
-					"Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
-					"Wir bieten spezielle Visualisierungslösungen, die bestehende Systeme und Standards ergänzen. In dem Fall von Migration zwischen unterschiedlichen Visualisierungsstandards, haben wir Erfahrung in der Umstellung von kompletten Gewerke. Wir bieten im Bereich Industrielle HMI Visualisierung die folgenden Leistungen an:"
+					"Industrie Mobil-App für Instandhaltung"
 				],
 				"points": [
-					"Ursachenauswertung zur anstehenden",
-					"Störungen",
-					"QR-Code Scannen von Technischen",
-					"Plätzen",
+					"Ursachenauswertung zur anstehenden Störungen",
+					"QR-Code Scannen von Technischen Plätzen",
 					"Anzeige der anstehenden und geschlossenen Störungen",
 					"Stördokumentation",
 					"Liste der Folgemaßnahmen",
-					"Textnotizen, Bild-, Video- und Audio-",
-					"Aufzeichnungen zur Anlage",
+					"Textnotizen, Bild-, Video- und Audio-Aufzeichnungen zur Anlage",
 					"Bild Annotation",
 					"Export und Import von Bilder und PDF",
 					"Schichtübergabe",
-					"Zentraler Windows-Server und",
-					"Administration"
+					"Zentraler Windows-Server und Administration"
 				],
-				"technologies": ["Swift", "C#"],
-				"slides": [{ "id": "mira", "alt": "MIRA Demonstration" }]
+				"technologies": ["Swift", "C#", "C++", "TCP", "HTTP", "MS-SQL"],
+				"slides": [{ "id": "mira-error-analysis", "alt": "MIRA Fehlerursache" }]
 			}
 		]
 	},
