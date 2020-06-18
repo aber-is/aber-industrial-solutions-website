@@ -45,6 +45,10 @@
 				text-decoration: none;
 			}
 
+			> a.current {
+				font-weight: 700;
+			}
+
 			&:last-child > a {
 				@include button;
 			}
