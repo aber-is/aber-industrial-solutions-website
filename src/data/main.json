@@ -3,10 +3,7 @@
 		"title": "aber.industrial.solutions",
 		"subtitle": "SCADA Softwareentwicklung Qualitätssicherung",
 		"links": [
-			{ "name": "Kontakt", "id": "contacts", "class": "" },
-			{ "name": "Karriere", "id": "", "class": "" },
-			{ "name": "Referenzen", "id": "references", "class": "" },
-			{ "name": "Fallstudien", "id": "products", "class": "" },
+			{ "name": "Unternehmen", "id": "company", "class": "" },
 			{ "name": "Leistungen", "id": "services", "class": "" },
 			{ "name": "Produkte", "id": "products", "class": "" },
 			{ "name": "Referenzen", "id": "references", "class": "" },
@@ -74,7 +71,9 @@
 					"Montage",
 					"Datenbank Anpassungen"
 				],
-				"slides": [{ "id": "iportal-mo-hambach", "alt": "iportal DAG Hambach" }]
+				"slides": [
+					{ "id": "iportal-mo-hambach", "alt": "iportal DAG Hambach" }
+				]
 			},
 			{
 				"id": "hmi",
@@ -96,7 +95,9 @@
 					"TGA Gebäudetechnik",
 					"Chemieanlage"
 				],
-				"slides": [{ "id": "marriage-station", "alt": "Hochzeitsstation Visu" }]
+				"slides": [
+					{ "id": "marriage-station", "alt": "Hochzeitsstation Visu" }
+				]
 			},
 			{
 				"id": "automotiv-specialists",
@@ -154,7 +155,7 @@
 				],
 				"slides": [
 					{ "id": "qs", "alt": "Qualitätssicherung" },
-					{ "id":"system-acceptance", "alt": "Abnahme" }
+					{ "id": "system-acceptance", "alt": "Abnahme" }
 				]
 			},
 			{
@@ -177,7 +178,9 @@
 					"Pascal",
 					"SWIFT"
 				],
-				"slides": [{ "id": "elvi", "alt": "ELVI Vorbeugendeinstandhaltung" }]
+				"slides": [
+					{ "id": "elvi", "alt": "ELVI Vorbeugendeinstandhaltung" }
+				]
 			}
 		]
 	},
@@ -189,9 +192,7 @@
 			{
 				"name": "MIRA",
 				"id": "mira",
-				"description": [
-					"Industrie Mobil-App für Instandhaltung"
-				],
+				"description": ["Industrie Mobil-App für Instandhaltung"],
 				"points": [
 					"Ursachenauswertung zur anstehenden Störungen",
 					"QR-Code Scannen von Technischen Plätzen",
@@ -205,7 +206,9 @@
 					"Zentraler Windows-Server und Administration"
 				],
 				"technologies": ["Swift", "C#", "C++", "TCP", "HTTP", "MS-SQL"],
-				"slides": [{ "id": "mira-error-analysis", "alt": "MIRA Fehlerursache" }]
+				"slides": [
+					{ "id": "mira-error-analysis", "alt": "MIRA Fehlerursache" }
+				]
 			}
 		]
 	},
