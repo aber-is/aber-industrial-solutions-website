@@ -229,27 +229,27 @@
 			{
 				"name": "Daimler",
 				"id": "daimler",
-				"website": "https://www.durr.com/"
+				"website": "https://www.daimler.com/de/"
 			},
 			{
 				"name": "Siemens",
 				"id": "siemens",
-				"website": "https://www.durr.com/"
+				"website": "https://new.siemens.com/global/de.html"
 			},
 			{
 				"name": "Eisenmann",
 				"id": "eisenmann",
-				"website": "https://www.durr.com/"
+				"website": "https://www.eisenmann.com/de.html"
 			},
 			{
 				"name": "Voith",
 				"id": "voith",
-				"website": "https://www.durr.com/"
+				"website": "http://voith.com/"
 			},
 			{
 				"name": "Rudolf Fritz",
 				"id": "rudolf_fritz",
-				"website": "https://www.durr.com/"
+				"website": "http://www.rudolf-fritz.de/"
 			},
 			{
 				"name": "Tessmar Gebäudeleittechnik GmbH",
@@ -297,8 +297,8 @@
 			{
 				"title": "Kontakt",
 				"body": [
-					"Telefon: +49 7224 995 61",
-					"Telefax: +49 7224 995 68",
+					"Telefon: +49 7224 995 613",
+					"Telefax: +49 7224 995 682",
 					"E-Mail: aber@aber-is.de"
 				]
 			},

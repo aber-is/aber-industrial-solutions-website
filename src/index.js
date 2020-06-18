@@ -184,7 +184,7 @@ const showHeroWrappers = () => {
 
 window.addEventListener('resize', changeMainPadding);
 window.addEventListener('load', initSwipers);
-window.addEventListener('load', initScrollHandle);
+//window.addEventListener('load', initScrollHandle);
 window.addEventListener('load', changeMainPadding);
 window.addEventListener('load', showHeroWrappers);
 button.addEventListener('click', handleMobileMenuClick);
