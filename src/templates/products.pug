@@ -1,7 +1,10 @@
 section#products
 	.wrapper
 		h2= products.name
-		p= products.description
+		ul
+			each product in products.products
+				li
+					a(href=`#${product.id}`)=product.name
 		each product in products.products
 			section(id=product.id)
 				.text

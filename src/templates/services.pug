@@ -1,7 +1,10 @@
 section#services
 	.wrapper
 		h2= services.name
-		p= services.description
+		ul
+			each service in services.services
+				li
+					a(href=`#${service.id}`)=service.name
 		each service in services.services
 			section(id=service.id)
 				.text

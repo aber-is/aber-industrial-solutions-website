@@ -15,10 +15,25 @@
 				margin-bottom: 0.15rem;
 			}
 
-			> p {
-				@include desc1;
+			> ul {
+				margin-bottom: 0.15rem;
+			}
 
-				margin-bottom: 0.3rem;
+			> ul > li {
+				display: inline;
+
+				> a {
+					@include desc1;
+					text-decoration: none;
+				}
+
+				&:not(:last-child) > a:after {
+					content: ', ';
+				}
+
+				&:last-child > a:after {
+					content: '. ';
+				}
 			}
 
 			> section {
