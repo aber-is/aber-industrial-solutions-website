@@ -6,7 +6,7 @@ header
 					h1= header.title
 					p= header.subtitle
 			.link-item-container
-				each link in header.links.reverse()
+				each link in header.links
 					li
 						a.link-item(href=`#${link.id}`)=link.name
 

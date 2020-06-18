@@ -8,7 +8,10 @@
 			{ "name": "Referenzen", "id": "references", "class": "" },
 			{ "name": "Fallstudien", "id": "products", "class": "" },
 			{ "name": "Leistungen", "id": "services", "class": "" },
-			{ "name": "Unternehmen", "id": "company", "class": "" }
+			{ "name": "Produkte", "id": "products", "class": "" },
+			{ "name": "Referenzen", "id": "references", "class": "" },
+			{ "name": "Karriere", "id": "", "class": "" },
+			{ "name": "Kontakt", "id": "contacts", "class": "" }
 		]
 	},
 	"hero": {
@@ -291,8 +294,8 @@
 			{
 				"title": "Kontakt",
 				"body": [
-					"Telefon:  ́+49 7224 995 61",
-					"Telefax:  ́+49 7224 995 68",
+					"Telefon: +49 7224 995 61",
+					"Telefax: +49 7224 995 68",
 					"E-Mail: aber@aber-is.de"
 				]
 			},
