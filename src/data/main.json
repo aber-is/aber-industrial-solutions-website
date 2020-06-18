@@ -5,7 +5,7 @@
 		"links": [
 			{ "name": "Unternehmen", "id": "company", "class": "" },
 			{ "name": "Leistungen", "id": "services", "class": "" },
-			{ "name": "Produkte", "id": "products", "class": "" },
+			{ "name": "Fallstudien", "id": "products", "class": "" },
 			{ "name": "Referenzen", "id": "references", "class": "" },
 			{ "name": "Karriere", "id": "", "class": "" },
 			{ "name": "Kontakt", "id": "contacts", "class": "" }

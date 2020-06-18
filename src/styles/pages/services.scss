@@ -24,7 +24,6 @@
 
 				> a {
 					@include desc1;
-					text-decoration: none;
 				}
 
 				&:not(:last-child) > a:after {
