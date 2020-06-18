@@ -3,12 +3,12 @@
 		"title": "aber.industrial.solutions",
 		"subtitle": "SCADA Softwareentwicklung Qualitätssicherung",
 		"links": [
-			{ "name": "Kontakt", "id": "contacts", "class": "" },
-			{ "name": "Karriere", "id": "", "class": "" },
-			{ "name": "Referenzen", "id": "references", "class": "" },
-			{ "name": "Produkte", "id": "products", "class": "" },
+			{ "name": "Unternehmen", "id": "company", "class": "" },
 			{ "name": "Leistungen", "id": "services", "class": "" },
-			{ "name": "Unternehmen", "id": "company", "class": "" }
+			{ "name": "Produkte", "id": "products", "class": "" },
+			{ "name": "Referenzen", "id": "references", "class": "" },
+			{ "name": "Karriere", "id": "", "class": "" },
+			{ "name": "Kontakt", "id": "contacts", "class": "" }
 		]
 	},
 	"hero": {
