@@ -207,7 +207,21 @@
 				],
 				"technologies": ["Swift", "C#", "C++", "TCP", "HTTP", "MS-SQL"],
 				"slides": [
-					{ "id": "mira-error-analysis", "alt": "MIRA Fehlerursache" }
+					{
+						"id": "mira-error-analysis",
+						"alt": "MIRA Fehlerursache"
+					},
+					{ "id": "mira-alarms", "alt": "MIRA Störungen" },
+					{ "id": "mira-protocol", "alt": "MIRA Protokoll" },
+					{ "id": "rsm-activity", "alt": "RSM Activität" },
+					{
+						"id": "rsm-vorman-overview",
+						"alt": "RSM Meisterübersicht"
+					},
+					{
+						"id": "rsm-worker-overview",
+						"alt": "RSM Arbeiterübersicht"
+					}
 				]
 			}
 		]

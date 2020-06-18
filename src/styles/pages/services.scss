@@ -155,4 +155,14 @@
 			}
 		}
 	}
+
+	@media (max-width: 480px) {
+		.services-slide {
+			padding: 0.2rem !important;
+		}
+		.services-container > .swiper-button-next,
+		.services-container > .swiper-button-prev {
+			display: none;
+		}
+	}
 }

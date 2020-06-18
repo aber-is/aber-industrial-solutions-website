@@ -62,23 +62,32 @@ const initSwipers = () => {
 			new Swiper(`#${service.id} .services-container`, {
 				direction: 'horizontal',
 				loop: true,
+				preloadImages: false,
 
-				pagination: {
-					el: '.services-pagination',
-					clickable: true,
-					type: 'fraction',
-					renderFraction: function (currentClass, totalClass) {
-						return (
-							'<span class="' +
-							currentClass +
-							'"></span>' +
-							' / ' +
-							'<span class="' +
-							totalClass +
-							'"></span>'
-						);
-					},
+				lazy: {
+					loadPrevNext: true,
 				},
+
+				autoplay: {
+					delay: 5000,
+				},
+
+				// pagination: {
+				// 	el: '.services-pagination',
+				// 	clickable: true,
+				// 	type: 'fraction',
+				// 	renderFraction: function (currentClass, totalClass) {
+				// 		return (
+				// 			'<span class="' +
+				// 			currentClass +
+				// 			'"></span>' +
+				// 			' / ' +
+				// 			'<span class="' +
+				// 			totalClass +
+				// 			'"></span>'
+				// 		);
+				// 	},
+				// },
 
 				navigation: {
 					nextEl: '.services-button-next',
@@ -99,23 +108,32 @@ const initSwipers = () => {
 			new Swiper(`#${product.id} .products-container`, {
 				direction: 'horizontal',
 				loop: true,
+				preloadImages: false,
 
-				pagination: {
-					el: '.products-pagination',
-					clickable: true,
-					type: 'fraction',
-					renderFraction: function (currentClass, totalClass) {
-						return (
-							'<span class="' +
-							currentClass +
-							'"></span>' +
-							' / ' +
-							'<span class="' +
-							totalClass +
-							'"></span>'
-						);
-					},
+				lazy: {
+					loadPrevNext: true,
 				},
+
+				autoplay: {
+					delay: 5000,
+				},
+
+				// pagination: {
+				// 	el: '.products-pagination',
+				// 	clickable: true,
+				// 	type: 'fraction',
+				// 	renderFraction: function (currentClass, totalClass) {
+				// 		return (
+				// 			'<span class="' +
+				// 			currentClass +
+				// 			'"></span>' +
+				// 			' / ' +
+				// 			'<span class="' +
+				// 			totalClass +
+				// 			'"></span>'
+				// 		);
+				// 	},
+				// },
 
 				navigation: {
 					nextEl: '.products-button-next',
@@ -130,8 +148,9 @@ const initSwipers = () => {
 	});
 };
 
-const changeMainPadding = () =>
-	(main.style.paddingTop = header.offsetHeight + 'px');
+const changeMainPadding = () => {
+	main.style.paddingTop = header.offsetHeight + 'px';
+};
 
 const handleMobileMenuClick = () => {
 	header.classList.toggle('open');
@@ -176,6 +195,7 @@ const initScrollHandle = () => {
 		}
 	});
 };
+
 const showHeroWrappers = () => {
 	document
 		.querySelectorAll('.hero-slide > .wrapper')

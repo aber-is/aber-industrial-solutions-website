@@ -155,4 +155,14 @@
 			}
 		}
 	}
+
+	@media (max-width: 480px) {
+		.products-slide {
+			padding: 0.2rem !important;
+		}
+		.products-container > .swiper-button-next,
+		.products-container > .swiper-button-prev {
+			display: none;
+		}
+	}
 }
