@@ -104,6 +104,7 @@
 
 					display: flex;
 					overflow: hidden;
+					background-color: $secondary-color;
 
 					.products-container {
 						flex: 1;
@@ -120,7 +121,6 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						background-color: $secondary-color;
 						padding: 1rem;
 					}
 
