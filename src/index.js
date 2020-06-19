@@ -157,7 +157,7 @@ const changeMainPadding = () => {
 
 const handleMobileMenuClick = () => {
 	header.classList.toggle('open');
-	if (!desktopMediaQuery)
+	if (!desktopMediaQuery.matches)
 		header.classList.contains('open')
 			? disableBodyScroll(body)
 			: enableBodyScroll(body);
