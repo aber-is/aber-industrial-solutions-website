@@ -16,12 +16,15 @@ import {
 } from 'swiper/js/swiper.esm.js';
 // Install modules
 Swiper.use([Scrollbar, Navigation, Lazy, Pagination, Autoplay]);
+// Import scroll lock
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const header = document.getElementsByTagName('HEADER')[0];
 const body = document.getElementsByTagName('BODY')[0];
 const main = document.getElementsByTagName('MAIN')[0];
 const button = document.getElementsByClassName('navigation-container')[0];
 const sections = document.querySelectorAll('main > section:not(#imprint)');
+const desktopMediaQuery = window.matchMedia('(min-width: 1024px)');
 let currentSection = undefined;
 let currentSectionLink = undefined;
 
@@ -154,7 +157,10 @@ const changeMainPadding = () => {
 
 const handleMobileMenuClick = () => {
 	header.classList.toggle('open');
-	body.classList.toggle('fixed');
+	if (!desktopMediaQuery)
+		header.classList.contains('open')
+			? disableBodyScroll(body)
+			: enableBodyScroll(body);
 };
 
 const handleScroll = () => {

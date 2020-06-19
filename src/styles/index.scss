@@ -16,13 +16,6 @@ body {
 	@include desc1;
 }
 
-// Mobile menu
-@media (max-width: 1024px) {
-	body.fixed {
-		position: fixed;
-	}
-}
-
 $primary-color: #fff;
 $secondary-color: #e9edf2;
 
