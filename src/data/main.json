@@ -16,7 +16,7 @@
 		"slides": [
 			{
 				"title": "SCADA Systeme",
-				"body": "Über 30 Jahre erfahrunghaben im Bereich industrielle Visualisierungen",
+				"body": "Über 30 Jahre Erfahrung im Bereich industrielle Visualisierungen",
 				"id": "scada",
 				"alt": "Image of HMI"
 			},
@@ -28,7 +28,7 @@
 			},
 			{
 				"title": "SCADA Spezialisten in der Automobilindustrie ",
-				"body": "iPortal, Leittechnik, Rohbau, Oberfläche, Montage, TGA, Hochregallage, Hochzeitsstation, Transportverfolgung, APT",
+				"body": "iPortal, Leittechnik, Rohbau, Oberfläche, Montage, TGA, Hochregallager, Hochzeitsstation, Transportverfolgung, APT",
 				"id": "automobile-assembly-line",
 				"alt": "Image of factory"
 			},
@@ -79,8 +79,8 @@
 				"id": "hmi",
 				"name": "Industrielle HMI Visualisierung",
 				"description": [
-					"Über die letzten 30 Jahre haben wir Visualisierungen in fast aller Bereich der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassungen bestehenden HMIs bis zu der Erstellung eines Automobil-Standards.",
-					"Wir bieten spezielle Visualisierungslösungen, die bestehende Systeme und Standards ergänzen. In dem Fall von Migration zwischen unterschiedlichen Visualisierungsstandards, haben wir Erfahrung in der Umstellung von kompletten Gewerke. Wir bieten im Bereich Industrielle HMI Visualisierung die folgenden Leistungen an:"
+					"Über die letzten 30 Jahre haben wir Visualisierungen in allen Bereichen der Automobilindustrie sowohl Anlagen in Maschinenbau, Mechanisierungen und in der Chemieindustrie erstellt. Unsere Erfahrung reicht von der Anpassung bestehender HMIs bis zu der Erstellung eines Automobil-Standards.",
+					"Wir bieten spezielle Visualisierungslösungen, die bestehende Systeme und Standards ergänzen. In dem Fall von Migration zwischen unterschiedlichen Visualisierungsstandards, haben wir Erfahrung in der Umstellung von kompletten Gewerken. Wir bieten im Bereich Industrielle HMI Visualisierung die folgenden Leistungen an:"
 				],
 				"points": [
 					"Standardisierung",
@@ -93,7 +93,7 @@
 					"Applikationstechnik",
 					"Mechanisierung",
 					"TGA Gebäudetechnik",
-					"Chemieanlage"
+					"Chemieanlagen"
 				],
 				"slides": [
 					{ "id": "marriage-station", "alt": "Hochzeitsstation Visu" }
@@ -103,7 +103,7 @@
 				"id": "automotiv-specialists",
 				"name": "Automobil HMI / Leittechnik Spezialisten",
 				"description": [
-					"Wir sind in den folgenden Bereich der Automobilindustrie für HMI, SCADA und Leittechnik tätig:"
+					"Wir sind in den folgenden Bereichen der Automobilindustrie für HMI, SCADA und Leittechnik tätig:"
 				],
 				"points": [
 					"Rohbau",
@@ -131,7 +131,7 @@
 					"Hambach, FR",
 					"Kecskemét, HU",
 					"Rastatt, DE",
-					"Sindelfngen, DE",
+					"Sindelfingen, DE",
 					"Tuscaloosa, USA",
 					"Wörth, DE"
 				],
@@ -163,7 +163,7 @@
 				"id": "softwareDevelopement",
 				"name": "Softwareentwicklung",
 				"description": [
-					"Wir entwickeln Software in den folgenden Bereiche:"
+					"Wir entwickeln Software in den folgenden Bereichen:"
 				],
 				"points": [
 					"Desktop Apps",
@@ -195,7 +195,7 @@
 				"id": "mira",
 				"description": ["Industrie Mobil-App für Instandhaltung"],
 				"points": [
-					"Ursachenauswertung zur anstehenden Störungen",
+					"Ursachenauswertung zu anstehenden Störungen",
 					"QR-Code Scannen von Technischen Plätzen",
 					"Anzeige der anstehenden und geschlossenen Störungen",
 					"Stördokumentation",
@@ -326,7 +326,7 @@
 			},
 			{
 				"title": "Berufsbezeichnung und berufsrechtliche Regelungen",
-				"body": ["Berufsbezeichnung: Ingeneuer"]
+				"body": ["Berufsbezeichnung: Ingenieur"]
 			},
 			{
 				"title": "Angaben zur Berufshaftpflichtversicherung",
