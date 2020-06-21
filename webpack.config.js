@@ -6,6 +6,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env) => {
 	return {
@@ -30,6 +31,7 @@ module.exports = (env) => {
 				filename: env.production ? '[name].[hash].css' : '[name].css',
 			}),
 			new CompressionPlugin(),
+			new CleanWebpackPlugin(),
 		],
 		module: {
 			rules: [
