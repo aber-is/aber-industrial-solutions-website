@@ -4,5 +4,5 @@ section#references
 		ul
 			each reference in references.references
 				li
-					a(href=`${reference.website}`  target='_blank')
-						img(src=require(`../images/references/${reference.id}.png`).default alt=reference.name  loading="lazy")
+					a(href=`${reference.website}` rel='noreferrer' target='_blank')
+						img(src=require(`../images/references/${reference.id}.png`).default alt=reference.name loading="lazy")

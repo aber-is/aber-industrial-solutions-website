@@ -125,12 +125,10 @@
 	}
 
 	@media (min-width: 1024px) {
-		$services: 5;
+		$services: 6;
 		@for $i from 1 to $services {
 			$even: $i%2 == 0;
 			#services > .wrapper > section:nth-of-type(#{$i + 1}) {
-				//background-color: if($even, $primary-color, $secondary-color);
-
 				> .text {
 					grid-column-start: if($even, 1, 2);
 					grid-column-end: if($even, 2, 3);

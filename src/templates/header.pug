@@ -2,11 +2,12 @@ header
 	nav
 		ul.navigation-container
 			li.logo-item
-				a(href='#')
+				a(href='.')
 					h1= header.title
 					p= header.subtitle
-			.link-item-container
-				each link in header.links
-					li
-						a.link-item(href=`#${link.id}`)=link.name
+			li
+				ul.link-item-container
+					each link in header.links
+						li
+							a.link-item(href=`#${link.id}`)=link.name
 
