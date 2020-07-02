@@ -71,7 +71,10 @@
 					"Datenbank Anpassungen"
 				],
 				"slides": [
-					{ "id": "iportal-mo-hambach", "alt": "iportal DAG Hambach" },
+					{
+						"id": "iportal-mo-hambach",
+						"alt": "iportal DAG Hambach"
+					},
 					{ "id": "iportal-main", "alt": "iportal DAG Hambach Main" },
 					{ "id": "iportal-team", "alt": "iportal DAG Hambach Team" }
 				]
@@ -98,8 +101,14 @@
 					"Chemieanlagen"
 				],
 				"slides": [
-					{ "id": "marriage-station", "alt": "Hochzeitsstation Visu" },
-					{ "id": "hmi-standard-wizard", "alt": "Visu Wizard integra" },
+					{
+						"id": "marriage-station",
+						"alt": "Hochzeitsstation Visu"
+					},
+					{
+						"id": "hmi-standard-wizard",
+						"alt": "Visu Wizard integra"
+					},
 					{ "id": "andon-board", "alt": "Andon board" },
 					{ "id": "hmi-ft", "alt": "HMI Fördertechnik" },
 					{ "id": "hmi-vt", "alt": "HMI Verfahrungstechnik" },
@@ -128,7 +137,10 @@
 					{ "id": "hmi-hrk", "alt": "HMI Applikationstechnik HRK" },
 					{ "id": "hmi-buffer", "alt": "HMI FT Übersicht" },
 					{ "id": "hmi-wp-tv", "alt": "HMI Weiseplatte TV" },
-					{ "id": "hmi-ft-overview", "alt": "HMI Fördertechnik Übersicht" }
+					{
+						"id": "hmi-ft-overview",
+						"alt": "HMI Fördertechnik Übersicht"
+					}
 				]
 			},
 			{
@@ -150,7 +162,10 @@
 				],
 				"slides": [
 					{ "id": "hmi-ktl", "alt": "HMI Verfahrungstechnik" },
-					{ "id": "hmi-ktl-sd", "alt": "HMI Applikationstechnik HRK" },
+					{
+						"id": "hmi-ktl-sd",
+						"alt": "HMI Applikationstechnik HRK"
+					},
 					{ "id": "hmi-tv-ktl", "alt": "HMI FT Übersicht" }
 				]
 			},
@@ -296,18 +311,21 @@
 		"contacts": [
 			{
 				"name": "Mark Aber",
+				"role": "Geschäftsführer",
 				"id": "mark_aber",
 				"email": "aber@aber-is.de",
 				"phone": "+49 7224 995613"
 			},
 			{
 				"name": "Fabian Sauer",
+				"role": "Softwareentwicklung & SCADA",
 				"id": "fabian_sauer",
 				"email": "fabian.sauer@aber-is.de",
 				"phone": "+49 151 5811 6548"
 			},
 			{
 				"name": "Günter Bernhart",
+				"role": "Qualitätssicherung",
 				"id": "gunter_bernhart",
 				"email": "g.bernhart@aber-is.de",
 				"phone": "+49 151 5812 2294"
