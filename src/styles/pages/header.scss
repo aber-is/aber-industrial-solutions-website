@@ -48,14 +48,46 @@
 			> a.current {
 				font-weight: 700;
 			}
+		}
 
-			&:last-child > a {
-				@include button;
+		.language {
+			> a > img {
+				margin-top: 0.09rem;
+				width: 0.3rem;
 			}
 		}
 	}
 
+	.language-item-container {
+		display: flex;
+		align-items: center;
+
+		> li {
+			display: flex;
+			padding: 0 0.2rem;
+			> a {
+				@include desc1;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.mobile-language {
+		display: none;
+		position: fixed;
+		top: 0.17rem;
+		right: 0.2rem;
+		> img {
+			margin-top: 0.09rem;
+			width: 0.3rem;
+		}
+	}
+
 	@media (max-width: 1024px) {
+		.language {
+			display: none !important;
+		}
+
 		.logo-item {
 			flex: 0 1 auto;
 			position: absolute;
@@ -114,6 +146,10 @@
 					}
 				}
 			}
+		}
+
+		.mobile-language {
+			display: block;
 		}
 	}
 	@media (max-width: 480px) {

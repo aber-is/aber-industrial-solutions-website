@@ -4,7 +4,7 @@ import './index.pug';
 import './styles/index.scss';
 import 'swiper/css/swiper.min.css';
 // Import data
-import { services, products } from './data/main.json';
+import { services, products } from './data/en.json';
 // Import Swiper and modules
 import {
 	Swiper,

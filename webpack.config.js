@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const data = require(path.resolve(__dirname, 'src/data/main.json'));
+const en = require(path.resolve(__dirname, 'src/data/en.json'));
+const de = require(path.resolve(__dirname, 'src/data/de.json'));
 const TerserJSPlugin = require('terser-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -14,6 +15,7 @@ module.exports = (env) => {
 		output: {
 			path: path.resolve(__dirname, 'dist'),
 			filename: !env.production ? '[name].js' : '[name].[hash].js',
+			publicPath: 'https://aber-is.de/',
 		},
 		optimization: {
 			minimizer: [
@@ -23,9 +25,14 @@ module.exports = (env) => {
 		},
 		plugins: [
 			new HtmlWebPackPlugin({
-				filename: path.resolve(__dirname, 'dist/index.html'),
+				filename: path.resolve(__dirname, 'dist/en/index.html'),
 				template: path.resolve(__dirname, 'src/index.pug'),
-				templateParameters: data,
+				templateParameters: en,
+			}),
+			new HtmlWebPackPlugin({
+				filename: path.resolve(__dirname, 'dist/de/index.html'),
+				template: path.resolve(__dirname, 'src/index.pug'),
+				templateParameters: de,
 			}),
 			new MiniCssExtractPlugin({
 				filename: env.production ? '[name].[hash].css' : '[name].css',
@@ -58,7 +65,7 @@ module.exports = (env) => {
 				{
 					test: /\.pug$/,
 					exclude: /node_modules/,
-					loader: 'pug-loader',
+					loader: ['pug-loader'],
 				},
 				{
 					test: /\.scss$/,
@@ -73,15 +80,9 @@ module.exports = (env) => {
 						},
 						'css-loader',
 						{
-							loader: 'postcss-loader',
-							options: {
-								options: {},
-							},
-						},
-						{
 							loader: 'sass-loader',
 							options: {
-								prependData: `$items: ${data.header.links.length};`,
+								prependData: `$items: ${en.header.links.length};`,
 							},
 						},
 					],
@@ -92,10 +93,15 @@ module.exports = (env) => {
 					use: ['style-loader', 'css-loader'],
 				},
 				{
-					test: /\.(png|svg|jpg|gif)$/,
+					test: /\.(png|jpg)$/,
 					exclude: /node_modules/,
 					use: [
-						'file-loader',
+						{
+							loader: 'file-loader',
+							options: {
+								name: '/media/[hash].[ext]',
+							},
+						},
 						{
 							loader: 'image-webpack-loader',
 							options: {

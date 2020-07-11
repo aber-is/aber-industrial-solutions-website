@@ -1,0 +1,377 @@
+{
+	"header": {
+		"lang": "en",
+		"alt_lang": "de",
+		"title": "aber.industrial.solutions",
+		"subtitle": "SCADA Software Development Quality Assurance",
+		"links": [
+			{ "name": "Company", "id": "company", "class": "" },
+			{ "name": "Service", "id": "services", "class": "" },
+			{ "name": "Case Studies", "id": "products", "class": "" },
+			{ "name": "Customers", "id": "references", "class": "" },
+			{ "name": "Career", "id": "", "class": "" },
+			{ "name": "Contact", "id": "contacts", "class": "" }
+		]
+	},
+	"hero": {
+		"id": "hero",
+		"slides": [
+			{
+				"title": "SCADA Systems",
+				"body": "Over 30 years of experience in the field of industrial visualisation",
+				"id": "scada",
+				"alt": "Image of HMI"
+			},
+			{
+				"title": "Quality Assurance",
+				"body": "System acceptance, risk assessments and documentation",
+				"id": "workers",
+				"alt": "Image of factory workers"
+			},
+			{
+				"title": "SCADA specialists in the automotive industry",
+				"body": "iPortal, control technology, body shop, paint shop, assembly, building services, high bay storage, marriage station, transport tracking, application technology",
+				"id": "automobile-assembly-line",
+				"alt": "Image of factory"
+			},
+			{
+				"title": "Software development",
+				"body": "Desktop & Mobile Apps, Fullstack Web, Client/Server, TCP, UDP, HTTP, Databases, C++, C#, Pascal, SWIFT",
+				"id": "software-developement",
+				"alt": "software screen"
+			}
+		]
+	},
+	"services": {
+		"name": "Services",
+		"id": "services",
+		"description": [
+			"Control technology",
+			"Industrial HMI visualisation",
+			"Automotive HMI / control technology specialists",
+			"Quality assurance",
+			"Software development"
+		],
+		"services": [
+			{
+				"id": "control-technology",
+				"name": "Control technology",
+				"description": [
+					"We offer the following services in the field of control technology:"
+				],
+				"points": [
+					"Daimler AG integra iPortal",
+					"iPDesigner",
+					"iPortal Template development",
+					"Consulting",
+					"System Tools",
+					"client-specific solution",
+					"Building services engineering (TGA)",
+					"Body shop",
+					"Paint shop",
+					"Assembly",
+					"Databases"
+				],
+				"slides": [
+					{
+						"id": "iportal-mo-hambach",
+						"alt": "iportal DAG Hambach"
+					},
+					{ "id": "iportal-main", "alt": "iportal DAG Hambach Main" },
+					{ "id": "iportal-team", "alt": "iportal DAG Hambach Team" }
+				]
+			},
+			{
+				"id": "hmi",
+				"name": "Industrial HMI visualisation",
+				"description": [
+					"Over the past 30 years, we have created HMIs in all areas of the automotive industry and in the fields of mechanical engineering, mechanisation and the chemical industry. Our experience ranges from the adaptation of existing HMIs to the creation of SCADA standards.",
+					"We offer specialised solutions that complement existing SCADA systems and standards, large scale migration of SCADA systems and HMI project development. We offer the following services in the field SCADA systems:"
+				],
+				"points": [
+					"Standardisation",
+					"Consulting",
+					"System Tools",
+					"Daimler SCADA Standard",
+					"integra Designer Pro",
+					"Conveyor technology",
+					"Process technology",
+					"Application technology",
+					"Mechanisation",
+					"Andon Board",
+					"Building services engineering (TGA)",
+					"Chemical plants"
+				],
+				"slides": [
+					{
+						"id": "marriage-station",
+						"alt": "Marriage-station Visu"
+					},
+					{
+						"id": "hmi-standard-wizard",
+						"alt": "HMI Wizard integra"
+					},
+					{ "id": "andon-board", "alt": "Andon board" },
+					{ "id": "hmi-ft", "alt": "HMI Conveyor technology" },
+					{ "id": "hmi-vt", "alt": "HMI Process technology" },
+					{ "id": "hmi-tv", "alt": "HMI Transport tracking" }
+				]
+			},
+			{
+				"id": "automotiv-specialists",
+				"name": "Automotive HMI / control technology",
+				"description": [
+					"We are active in the following areas of the automotive industry for HMI, SCADA and control technology:"
+				],
+				"points": [
+					"Body shop",
+					"Paint shop",
+					"Assembly",
+					"Application technology",
+					"Building services engineering (TGA)",
+					"High bay storage",
+					"Marriage station",
+					"Transport tracking",
+					"System Parameterisation"
+				],
+				"slides": [
+					{ "id": "hmi-vt-pent", "alt": "HMI Process technology" },
+					{
+						"id": "hmi-hrk",
+						"alt": "HMI Application technology HRK"
+					},
+					{ "id": "hmi-buffer", "alt": "HMI FT Overview" },
+					{ "id": "hmi-wp-tv", "alt": "HMI Weiseplatte TV" },
+					{
+						"id": "hmi-ft-overview",
+						"alt": "HMI FT Overview"
+					}
+				]
+			},
+			{
+				"id": "daimler-specialists",
+				"name": "Specialists for Daimler AG integra SCADA and control technology",
+				"description": [
+					"We have designed systems for the following plants:"
+				],
+				"points": [
+					"Bremen, DE",
+					"East London, SA",
+					"Gaggenau, DE",
+					"Hambach, FR",
+					"Kecskemét, HU",
+					"Rastatt, DE",
+					"Sindelfingen, DE",
+					"Tuscaloosa, USA",
+					"Wörth, DE"
+				],
+				"slides": [
+					{ "id": "hmi-ktl", "alt": "HMI Verfahrungstechnik" },
+					{
+						"id": "hmi-ktl-sd",
+						"alt": "HMI Applikationstechnik HRK"
+					},
+					{ "id": "hmi-tv-ktl", "alt": "HMI FT Übersicht" }
+				]
+			},
+			{
+				"id": "QS",
+				"name": "Quality assurance",
+				"description": [
+					"System acceptance of plants including the following activities:"
+				],
+				"points": [
+					"Documentation (assembly plan, circuit diagram, terminal diagram, parts list, operating instructions)",
+					"Safety-relevant documents (measurement protocol according to BGV A3, CE certificate, risk assessment MSR technology)",
+					"Control cabinet construction and system installation",
+					"Signage",
+					"Cabling",
+					"Plant operation",
+					"Function test of the plant",
+					"Risk assessments of plants",
+					"Documentation"
+				],
+				"slides": [
+					{ "id": "qs", "alt": "Qualitätssicherung" },
+					{ "id": "system-acceptance", "alt": "Abnahme" }
+				]
+			},
+			{
+				"id": "softwareDevelopment",
+				"name": "Software development",
+				"description": ["We develop software in the following fields:"],
+				"points": [
+					"Desktop Apps",
+					"Mobile Apps",
+					"Fullstack Web",
+					"Client/Server",
+					"TCP",
+					"UDP",
+					"HTTP",
+					"Databases",
+					"C++",
+					"C#",
+					"Pascal",
+					"SWIFT"
+				],
+				"slides": [
+					{ "id": "elvi", "alt": "ELVI Preventive maintenance" }
+				]
+			}
+		]
+	},
+	"products": {
+		"name": "Case studies",
+		"id": "products",
+		"description": "MIRA, iPortal, Andon Board, Resource management",
+		"products": [
+			{
+				"name": "MIRA",
+				"id": "mira",
+				"description": ["Industry maintenance mobile app"],
+				"points": [
+					"Evaluation of the causes of upcoming faults",
+					"QR code scanning of functional locations",
+					"Display of upcoming and closed faults",
+					"Fault documentation",
+					"Follow-up lists",
+					"Text notes, image, video and audio recordings of the system",
+					"Image Annotation",
+					"Export and import of images and PDF",
+					"Shift handover",
+					"Central Windows server and administration"
+				],
+				"technologies": ["Swift", "C#", "C++", "TCP", "HTTP", "MS-SQL"],
+				"slides": [
+					{
+						"id": "mira-error-analysis",
+						"alt": "MIRA Fehlerursache"
+					},
+					{ "id": "mira-alarms", "alt": "MIRA Störungen" },
+					{ "id": "mira-protocol", "alt": "MIRA Protokoll" },
+					{ "id": "rsm-activity", "alt": "RSM Activität" },
+					{
+						"id": "rsm-vorman-overview",
+						"alt": "RSM Meisterübersicht"
+					},
+					{
+						"id": "rsm-worker-overview",
+						"alt": "RSM Arbeiterübersicht"
+					}
+				]
+			}
+		]
+	},
+	"company": {
+		"name": "Company",
+		"id": "company",
+		"description": "aber.industrial.solutions has more than 30 years of experience in the field of SCADA and software development. We are a medium-sized company that specializes in app and software development, SCADA and HMI systems, Industry 4.0 / digital factory tools, control technology and standardisation. We are proud of our quality, reliability, competence and satisfied customers."
+	},
+	"references": {
+		"name": "Customers",
+		"id": "references",
+		"references": [
+			{
+				"name": "Dürr",
+				"id": "durr",
+				"website": "https://www.durr.com/"
+			},
+			{
+				"name": "Daimler",
+				"id": "daimler",
+				"website": "https://www.daimler.com/de/"
+			},
+			{
+				"name": "Siemens",
+				"id": "siemens",
+				"website": "https://new.siemens.com/global/de.html"
+			},
+			{
+				"name": "Eisenmann",
+				"id": "eisenmann",
+				"website": "https://www.eisenmann.com/de.html"
+			},
+			{
+				"name": "Voith",
+				"id": "voith",
+				"website": "http://voith.com/"
+			},
+			{
+				"name": "Rudolf Fritz",
+				"id": "rudolf_fritz",
+				"website": "http://www.rudolf-fritz.de/"
+			},
+			{
+				"name": "Tessmar Gebäudeleittechnik GmbH",
+				"id": "tessmar",
+				"website": "http://gebaeudeleittechnik.biz/unternehmen/unternehmen.htm"
+			}
+		]
+	},
+	"contacts": {
+		"name": "Contacts",
+		"id": "contacts",
+		"contacts": [
+			{
+				"name": "Mark Aber",
+				"role": "CEO",
+				"id": "mark_aber",
+				"email": "aber@aber-is.de",
+				"phone": "+49 7224 995613"
+			},
+			{
+				"name": "Fabian Sauer",
+				"role": "Software development & SCADA",
+				"id": "fabian_sauer",
+				"email": "fabian.sauer@aber-is.de",
+				"phone": "+49 151 5811 6548"
+			},
+			{
+				"name": "Günter Bernhart",
+				"role": "Quality assurance",
+				"id": "gunter_bernhart",
+				"email": "g.bernhart@aber-is.de",
+				"phone": "+49 151 5812 2294"
+			}
+		]
+	},
+	"imprint": {
+		"name": "Imprint",
+		"sections": [
+			{
+				"title": "Company:",
+				"body": [
+					"aber.industrial.solutions",
+					"Kelterbergstr. 5",
+					"76593 Gernsbach",
+					"GERMANY"
+				]
+			},
+			{
+				"title": "Contact",
+				"body": [
+					"Phone: +49 7224 995 613",
+					"FAX: +49 7224 995 682",
+					"Email: aber@aber-is.de"
+				]
+			},
+			{
+				"title": "Represented by",
+				"body": ["Mark Aber B.Eng. CEO"]
+			},
+			{
+				"title": "VAT-ID",
+				"body": ["DE 17 899 4004"]
+			},
+			{
+				"title": "Professional liability insurance",
+				"body": [
+					"NÜRNBERGER Allgemeine Versicherungs-AG",
+					"Ostendstraße 100",
+					"90334 Nürnberg",
+					"GERMANY"
+				]
+			}
+		]
+	}
+}

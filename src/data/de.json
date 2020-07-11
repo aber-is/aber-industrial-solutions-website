@@ -1,5 +1,7 @@
 {
 	"header": {
+		"lang": "de",
+		"alt_lang": "en",
 		"title": "aber.industrial.solutions",
 		"subtitle": "SCADA Softwareentwicklung Qualitätssicherung",
 		"links": [
@@ -338,7 +340,7 @@
 			{
 				"title": "Angaben gemäß § 5 TMG",
 				"body": [
-					"Mark Aber",
+					"Mark Aber B.Eng.",
 					"Geschäftführer",
 					"Kelterbergstr. 5",
 					"76593 Gernsbach"
@@ -353,30 +355,19 @@
 				]
 			},
 			{
-				"title": "Umsatzsteuer-ID",
-				"body": [
-					"Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
-					"DE 17 899 4004"
-				]
+				"title": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz",
+				"body": ["DE 17 899 4004"]
 			},
 			{
-				"title": "Berufsbezeichnung und berufsrechtliche Regelungen",
+				"title": "Berufsbezeichnung",
 				"body": ["Berufsbezeichnung: Ingenieur"]
 			},
 			{
 				"title": "Angaben zur Berufshaftpflichtversicherung",
 				"body": [
-					"Name und Sitz des Versicherers:",
 					"NÜRNBERGER Allgemeine Versicherungs-AG",
 					"Ostendstraße 100",
 					"90334 Nürnberg"
-				]
-			},
-			{
-				"title": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
-				"body": [
-					"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
-					"Quelle:https://www.e-recht24.de"
 				]
 			}
 		]
