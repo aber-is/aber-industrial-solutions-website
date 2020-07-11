@@ -222,6 +222,7 @@
 	"products": {
 		"name": "Fallstudien",
 		"id": "products",
+		"listitle": "Technologien",
 		"description": "MIRA, iPortal, Andon Board, Ressourcen Management",
 		"products": [
 			{
@@ -334,6 +335,7 @@
 			}
 		]
 	},
+	"developer": "Website gestaltet von aber.industrial.solutions",
 	"imprint": {
 		"name": "Impressum",
 		"sections": [

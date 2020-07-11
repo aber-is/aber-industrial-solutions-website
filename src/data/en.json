@@ -18,7 +18,7 @@
 		"slides": [
 			{
 				"title": "SCADA Systems",
-				"body": "Over 30 years of experience in the field of industrial visualisation",
+				"body": "Over 30 years experience in the field of industrial visualisation",
 				"id": "scada",
 				"alt": "Image of HMI"
 			},
@@ -223,6 +223,7 @@
 	"products": {
 		"name": "Case studies",
 		"id": "products",
+		"listitle": "Technologies",
 		"description": "MIRA, iPortal, Andon Board, Resource management",
 		"products": [
 			{
@@ -265,7 +266,7 @@
 	"company": {
 		"name": "Company",
 		"id": "company",
-		"description": "aber.industrial.solutions has more than 30 years of experience in the field of SCADA and software development. We are a medium-sized company that specializes in app and software development, SCADA and HMI systems, Industry 4.0 / digital factory tools, control technology and standardisation. We are proud of our quality, reliability, competence and satisfied customers."
+		"description": "aber.industrial.solutions has more than 30 years experience in the field of SCADA and software development. We are a medium-sized company that specializes in app and software development, SCADA and HMI systems, Industry 4.0 / digital factory tools, control technology and standardisation. We are proud of our quality, reliability, competence and satisfied customers."
 	},
 	"references": {
 		"name": "Customers",
@@ -335,6 +336,7 @@
 			}
 		]
 	},
+	"developer": "Website designed by aber.industrial.solutions",
 	"imprint": {
 		"name": "Imprint",
 		"sections": [
