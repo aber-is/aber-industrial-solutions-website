@@ -135,9 +135,14 @@
 				}
 
 				&:after {
-					content: '⛌';
-					@include h2;
-					padding-left: 0rem;
+					content: '+';
+					padding-left: 0;
+					color: var(--color-black);
+					font-family: var(--main-font);
+					line-height: 0.28rem;
+					font-size: 0.56rem;
+					font-weight: 100;
+					transform: rotate(45deg);
 				}
 
 				@for $i from 1 through $items {

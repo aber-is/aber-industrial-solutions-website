@@ -99,7 +99,7 @@ module.exports = (env) => {
 						{
 							loader: 'file-loader',
 							options: {
-								name: '/media/[hash].[ext]',
+								name: 'media/[hash].[ext]',
 							},
 						},
 						{
