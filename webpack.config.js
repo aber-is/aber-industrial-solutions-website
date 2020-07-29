@@ -15,7 +15,7 @@ module.exports = (env) => {
 		output: {
 			path: path.resolve(__dirname, 'dist'),
 			filename: !env.production ? '[name].js' : '[name].[hash].js',
-			publicPath: 'https://aber-is.de/',
+			publicPath: !env.production ? 'https://aber-is.de/' : '/',
 		},
 		optimization: {
 			minimizer: [
