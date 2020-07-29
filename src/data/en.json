@@ -39,6 +39,12 @@
 				"body": "Desktop & Mobile Apps, Fullstack Web, Client/Server, TCP, UDP, HTTP, Databases, C++, C#, Pascal, SWIFT",
 				"id": "software-developement",
 				"alt": "software screen"
+			},
+			{
+				"title": "PLC programming",
+				"body": "Siemens Simatic S7 programming for process technology, conveyor technology, mechanisation",
+				"id": "plc",
+				"alt": "plc"
 			}
 		]
 	},
@@ -216,6 +222,22 @@
 				],
 				"slides": [
 					{ "id": "elvi", "alt": "ELVI Preventive maintenance" }
+				]
+			},
+			{
+				"id": "plcProgramming",
+				"name": "PLC Programming",
+				"description": ["PLC Programmingin the following areas:"],
+				"points": [
+					"Siemens Simatic Step 7",
+					"Process technology",
+					"Conveyor technology",
+					"Mechanisation"					
+				],
+				"slides": [
+					{ "id": "S7_2", "alt": "PLC Programming" },
+					{ "id": "plc", "alt": "PLC Programming" },
+					{ "id": "S7_3", "alt": "PLC Programming" }
 				]
 			}
 		]

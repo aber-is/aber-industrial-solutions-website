@@ -39,6 +39,12 @@
 				"body": "Desktop & Mobile Apps, Fullstack Web, Client/Server, TCP, UDP, HTTP, Datenbanken, C++, C#, Pascal, SWIFT",
 				"id": "software-developement",
 				"alt": "software screen"
+			},
+			{
+				"title": "SPS Programmierung",
+				"body": "Siemens Simatic S7 Programmierung, Verfahrungstechnik, Fördertechnik, Mechanisierung",
+				"id": "plc",
+				"alt": "plc"
 			}
 		]
 	},
@@ -215,6 +221,21 @@
 				],
 				"slides": [
 					{ "id": "elvi", "alt": "ELVI Vorbeugendeinstandhaltung" }
+				]
+			},
+			{
+				"id": "plcProgramming",
+				"name": "SPS Programmierung",
+				"description": ["Siemens Simatic S7 Programmierung in den folgenden Bereichen:"],
+				"points": [
+					"Verfahrungstechnik",
+					"Fördertechnik",
+					"Mechanisierung"
+				],
+				"slides": [
+					{ "id": "S7_2", "alt": "PLC Programming" },
+					{ "id": "plc", "alt": "PLC Programming" },
+					{ "id": "S7_3", "alt": "PLC Programming" }
 				]
 			}
 		]
