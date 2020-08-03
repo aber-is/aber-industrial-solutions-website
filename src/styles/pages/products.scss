@@ -50,7 +50,7 @@
 
 					> h3 {
 						@include h3;
-						font-weight: var(--font-weight-6);
+						font-weight: 600;
 						margin-bottom: 0.15rem;
 					}
 
@@ -75,7 +75,7 @@
 
 					> .technologies {
 						@include h4;
-						font-weight: var(--font-weight-6);
+						font-weight: 600;
 						> h4 {
 							display: inline;
 							&:after {

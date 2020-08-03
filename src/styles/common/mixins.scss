@@ -1,53 +1,64 @@
 @mixin h1 {
-	color: var(--color-black);
-	font-family: var(--main-font);
-	font-size: var(--font-size-h1);
-	font-weight: var(--font-weight-4);
-	letter-spacing: var(--letter-spacing);
-	line-height: var(--line-height-h1);
+	font-size: 0.47rem;
+	line-height: 0.47rem;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: normal;
+	@media (max-width: 1024px) {
+		font-size: 0.26rem;
+		line-height: 0.29rem;
+	}
+	@media (max-width: 480px) { line-height: 0.29rem; }
 }
 
 @mixin h2 {
-	color: var(--color-black);
-	font-family: var(--main-font);
-	font-size: var(--font-size-h2);
-	font-weight: var(--font-weight-4);
-	letter-spacing: var(--letter-spacing);
-	line-height: var(--line-height-h2);
+	font-size: 0.38rem;
+	line-height: 0.38rem;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: normal;
+	@media (max-width: 1024px) {
+		font-size: 0.26rem;
+		line-height: 0.29rem;
+	}
+	@media (max-width: 480px) { line-height: 0.23rem; }
 }
 
 @mixin h3 {
-	color: var(--color-black);
-	font-family: var(--main-font);
-	font-size: var(--font-size-h3);
-	font-weight: var(--font-weight-4);
-	letter-spacing: var(--letter-spacing);
-	line-height: var(--line-height-h3);
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: normal;
 }
 
 @mixin h4 {
-	color: var(--color-black);
-	font-family: var(--main-font);
-	font-size: var(--font-size-h4);
-	font-weight: var(--font-weight-4);
-	letter-spacing: var(--letter-spacing);
-	line-height: var(--line-height-h4);
+	font-size: 0.17rem;
+	line-height: 0.17rem;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: normal;
 }
 
 @mixin desc1 {
-	color: var(--color-black);
-	font-family: var(--main-font);
-	font-size: var(--font-size-desc1);
-	font-weight: var(--font-weight-4);
-	letter-spacing: var(--letter-spacing);
-	line-height: var(--line-height-desc1);
+	font-size: 0.16rem;
+	line-height: 0.28rem;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: normal;
+	@media (max-width: 1024px) { line-height: 0.25rem; }
 }
 
 @mixin desc2 {
-	color: var(--color-black);
-	font-family: var(--main-font);
-	font-size: var(--font-size-desc2);
-	font-weight: var(--font-weight-4);
-	letter-spacing: var(--letter-spacing);
-	line-height: var(--line-height-desc2);
+	font-size: 0.12rem;
+	line-height: 0.16rem;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: normal;
 }
