@@ -9,11 +9,11 @@ header
 				ul.link-item-container
 					each link in header.links
 						li
-							a.link-item(href=`#${link.id}`)=link.name
+							a.link-item(href=('#' + link.id))=link.name
 					li.language
-						a(href=`https://aber-is.de/${header.alt_lang}/`)
-							img(src=require(`../images/header/${header.alt_lang}.jpg`).default)
-		a.mobile-language(href=`https://aber-is.de/${header.alt_lang}/`)
-			img(src=require(`../images/header/${header.alt_lang}.jpg`).default)
+						a(href=('https://aber-is.de/' + header.alt_lang + '/'))
+							img(src=require('../images/header/' + header.alt_lang + '.jpg').default)
+		a.mobile-language(href='https://aber-is.de/' + header.alt_lang + '/')
+			img(src=require('../images/header/' + header.alt_lang + '.jpg').default)
 
 

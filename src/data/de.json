@@ -16,6 +16,12 @@
 	"hero": {
 		"id": "hero",
 		"slides": [
+                        {
+                                "title": "COVID und Remote-Zusammenarbeit",
+                                "body": "Unser Team verfügt über umfangreiche Erfahrung in Remote-Zusammenarbeit",
+                                "id": "covid",
+                                "alt": "Remote collaboration"
+                        },
 			{
 				"title": "SCADA Systeme",
 				"body": "Über 30 Jahre Erfahrung im Bereich industrielle Visualisierungen",
@@ -200,7 +206,7 @@
 				]
 			},
 			{
-				"id": "softwareDevelopement",
+				"id": "softwareDevelopment",
 				"name": "Softwareentwicklung",
 				"description": [
 					"Wir entwickeln Software in den folgenden Bereichen:"

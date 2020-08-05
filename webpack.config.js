@@ -1,17 +1,22 @@
-const path = require('path');
 const webpack = require('webpack');
-const en = require(path.resolve(__dirname, 'src/data/en.json'));
+const path = require('path');
+
 const de = require(path.resolve(__dirname, 'src/data/de.json'));
+const en = require(path.resolve(__dirname, 'src/data/en.json'));
+
 const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env) => {
 	return {
-		entry: path.resolve(__dirname, './src/index.js'),
+		entry: [
+			path.resolve(__dirname, './src/index.js')
+		],
 		output: {
 			path: path.resolve(__dirname, 'dist'),
 			filename: !env.production ? '[name].js' : '[name].[hash].js',
@@ -44,28 +49,13 @@ module.exports = (env) => {
 			rules: [
 				{
 					test: /\.js$/,
-					include: [
-						path.resolve(__dirname, 'node_modules/dom7'),
-						path.resolve(__dirname, 'node_modules/swiper'),
-					],
-					use: {
-						loader: 'babel-loader',
-						options: {
-							presets: [
-								[
-									'@babel/preset-env',
-									{
-										modules: false,
-									},
-								],
-							],
-						},
-					},
+					exclude: /node_modules/,
+					loader: 'babel-loader',
 				},
 				{
 					test: /\.pug$/,
 					exclude: /node_modules/,
-					loader: ['pug-loader'],
+					loader: 'pug-loader',
 				},
 				{
 					test: /\.scss$/,
@@ -79,6 +69,7 @@ module.exports = (env) => {
 							},
 						},
 						'css-loader',
+						'postcss-loader',
 						{
 							loader: 'sass-loader',
 							options: {
@@ -89,17 +80,18 @@ module.exports = (env) => {
 				},
 				{
 					test: /\.css$/,
-					exclude: /node_modules\/(?!(swiper)\/).*/,
-					use: ['style-loader', 'css-loader'],
+					exclude: /node_modules/,
+					use: ['style-loader', 'css-loader', 'postcss-loader'],
 				},
 				{
-					test: /\.(png|jpg)$/,
+					test: /\.(png|jpg|gif)$/,
 					exclude: /node_modules/,
 					use: [
 						{
 							loader: 'file-loader',
 							options: {
-								name: 'media/[hash].[ext]',
+								name: '[hash].[ext]',
+								outputPath: 'media/'
 							},
 						},
 						{

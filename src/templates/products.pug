@@ -4,7 +4,7 @@ section#products
 		ul
 			each product in products.products
 				li
-					a(href=`#${product.id}`)=product.name
+					a(href=('#' + product.id))=product.name
 		each product in products.products
 			section(id=product.id)
 				.text
@@ -21,12 +21,8 @@ section#products
 								li=technology
 
 				.products
-					.products-container.swiper-container
-						.products-wrapper.swiper-wrapper
-							each slide in product.slides
-								.products-slide.swiper-slide
-									img(src=require(`../images/products/${slide.id}.png`).default alt=slide.alt loading="lazy")
-						//-.products-pagination.swiper-pagination
-						.products-button-prev.swiper-button-prev
-						.products-button-next.swiper-button-next
+					.products-container
+						each slide in product.slides
+							.products-slide
+								img(data-lazy=require('../images/products/' + slide.id + '.png').default alt=slide.alt)
 			hr

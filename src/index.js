@@ -1,24 +1,21 @@
-// Import pug
+// Polyfill
+import "core-js/stable";
+import "regenerator-runtime/runtime.js";
+// jQuery
+import $ from "jquery";
+// Slick
+import 'slick-carousel/slick/slick.js';
+// Pug
 import './index.pug';
-// Import styles
+// Styling
 import './styles/index.scss';
-import 'swiper/css/swiper.min.css';
-// Import data
+import './styles/slick/slick.scss';
+import './styles/slick/slick-theme.scss';
+// Data
 import { services, products } from './data/en.json';
-// Import Swiper and modules
-import {
-	Swiper,
-	Scrollbar,
-	Navigation,
-	Pagination,
-	Lazy,
-	Autoplay,
-} from 'swiper/js/swiper.esm.js';
-// Install modules
-Swiper.use([Scrollbar, Navigation, Lazy, Pagination, Autoplay]);
-// Import scroll lock
+// Scroll lock
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-
+// Variables
 const header = document.getElementsByTagName('HEADER')[0];
 const body = document.getElementsByTagName('BODY')[0];
 const main = document.getElementsByTagName('MAIN')[0];
@@ -28,126 +25,31 @@ const desktopMediaQuery = window.matchMedia('(min-width: 1024px)');
 let currentSection = undefined;
 let currentSectionLink = undefined;
 
-const initSwipers = () => {
-	var slideshowSwiper = new Swiper('.hero-container', {
-		direction: 'horizontal',
-		loop: true,
-		preloadImages: false,
-
-		lazy: {
-			loadPrevNext: true,
-		},
-
-		autoplay: {
-			delay: 5000,
-		},
-
-		navigation: {
-			nextEl: '.hero-button-next',
-			prevEl: '.hero-button-prev',
-		},
-
-		pagination: {
-			el: '.hero-pagination',
-			clickable: true,
-			type: 'bullets',
-		},
-
-		scrollbar: {
-			el: '.hero-scrollbar',
-		},
+const initSliders = () => {
+	// Hero slider
+	$(".hero-container").slick({
+		dots: true,
+		lazyLoad: 'progressive',
+		autoplay: true,
+		autoplaySpeed: 5000
 	});
 
-	var serviceSwipers = [];
-
+	// Service sliders
 	services.services.forEach((service) => {
-		serviceSwipers.push(
-			new Swiper(`#${service.id} .services-container`, {
-				direction: 'horizontal',
-				loop: true,
-				preloadImages: false,
-
-				lazy: {
-					loadPrevNext: true,
-				},
-
-				autoplay: {
-					delay: 5000,
-				},
-
-				// pagination: {
-				// 	el: '.services-pagination',
-				// 	clickable: true,
-				// 	type: 'fraction',
-				// 	renderFraction: function (currentClass, totalClass) {
-				// 		return (
-				// 			'<span class="' +
-				// 			currentClass +
-				// 			'"></span>' +
-				// 			' / ' +
-				// 			'<span class="' +
-				// 			totalClass +
-				// 			'"></span>'
-				// 		);
-				// 	},
-				// },
-
-				navigation: {
-					nextEl: '.services-button-next',
-					prevEl: '.services-button-prev',
-				},
-
-				scrollbar: {
-					el: '.services-scrollbar',
-				},
-			})
-		);
+		$("#" + service.id + " .services-container").slick({
+			lazyLoad: 'progressive',
+			//autoplay: true,
+			//autoplaySpeed: 5000
+		});
 	});
 
-	var productSwipers = [];
-
+	// Product sliders
 	products.products.forEach((product) => {
-		productSwipers.push(
-			new Swiper(`#${product.id} .products-container`, {
-				direction: 'horizontal',
-				loop: true,
-				preloadImages: false,
-
-				lazy: {
-					loadPrevNext: true,
-				},
-
-				autoplay: {
-					delay: 5000,
-				},
-
-				// pagination: {
-				// 	el: '.products-pagination',
-				// 	clickable: true,
-				// 	type: 'fraction',
-				// 	renderFraction: function (currentClass, totalClass) {
-				// 		return (
-				// 			'<span class="' +
-				// 			currentClass +
-				// 			'"></span>' +
-				// 			' / ' +
-				// 			'<span class="' +
-				// 			totalClass +
-				// 			'"></span>'
-				// 		);
-				// 	},
-				// },
-
-				navigation: {
-					nextEl: '.products-button-next',
-					prevEl: '.products-button-prev',
-				},
-
-				scrollbar: {
-					el: '.products-scrollbar',
-				},
-			})
-		);
+		$("#" + product.id + " .products-container").slick({
+			lazyLoad: 'progressive',
+			autoplay: true,
+			autoplaySpeed: 5000
+		});
 	});
 };
 
@@ -177,7 +79,7 @@ const handleScroll = () => {
 			}
 			currentSection = section;
 			currentSectionLink = document.querySelector(
-				`a[href='#${currentSection.id}']`
+				'a[href=#' + currentSection.id + ']'
 			);
 			currentSectionLink.classList.add('current');
 			break;
@@ -209,7 +111,7 @@ const showHeroWrappers = () => {
 };
 
 window.addEventListener('resize', changeMainPadding);
-window.addEventListener('load', initSwipers);
+window.addEventListener('load', initSliders);
 //window.addEventListener('load', initScrollHandle);
 window.addEventListener('load', changeMainPadding);
 window.addEventListener('load', showHeroWrappers);

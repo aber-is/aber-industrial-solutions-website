@@ -17,6 +17,12 @@
 		"id": "hero",
 		"slides": [
 			{
+				"title": "COVID and remote collaboration",
+				"body": "Our team has extensive experience with working remotely and is able to fulfil our clients needs off-site",
+				"id": "covid",
+				"alt": "Remote collaboration"
+			},
+			{
 				"title": "SCADA Systems",
 				"body": "Over 30 years experience in the field of industrial visualisation",
 				"id": "scada",

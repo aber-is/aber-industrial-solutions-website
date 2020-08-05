@@ -1,12 +1,8 @@
 section#hero
 	.hero-container.swiper-container
-		.hero-wrapper.swiper-wrapper
-			each slide in hero.slides
-				.hero-slide.swiper-slide.swiper-lazy(data-background=require(`../images/hero/${slide.id}.jpg`).default)
-					.swiper-lazy-preloader
-					.wrapper.hidden
-						h2=slide.title
-						p=slide.body
-		.hero-pagination.swiper-pagination
-		.hero-button-prev.swiper-button-prev
-		.hero-button-next.swiper-button-next
+		each slide in hero.slides
+			- var url = require('../images/hero/' + slide.id + '.jpg').default;
+			.hero-slide(style=('background-image: url(' + url + ')'))
+				.wrapper.hidden
+					h2=slide.title
+					p=slide.body

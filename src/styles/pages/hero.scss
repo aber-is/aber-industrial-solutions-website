@@ -10,12 +10,15 @@
 		}
 
 		.hero-slide {
+			position: relative;
+			height: 50vh;
 			overflow: hidden;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
+			z-index: -99;
 
-			display: flex;
+			display: flex !important;
 			justify-content: flex-start;
 			align-items: flex-end;
 
@@ -42,17 +45,13 @@
 				}
 			}
 		}
-
-		.hero-button-next,
-		.hero-button-prev {
-			color: #fff;
-		}
 	}
 
 	@media (max-width: 1024px) {
 		#hero {
 			height: 30vh;
 			.hero-slide {
+				height: 30vh;
 				> .wrapper {
 					margin: 0;
 					width: 100%;
