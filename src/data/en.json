@@ -347,20 +347,6 @@
 				"id": "mark_aber",
 				"email": "aber@aber-is.de",
 				"phone": "+49 7224 995613"
-			},
-			{
-				"name": "Fabian Sauer",
-				"role": "Software development & SCADA",
-				"id": "fabian_sauer",
-				"email": "fabian.sauer@aber-is.de",
-				"phone": "+49 151 5811 6548"
-			},
-			{
-				"name": "Günter Bernhart",
-				"role": "Quality assurance",
-				"id": "gunter_bernhart",
-				"email": "g.bernhart@aber-is.de",
-				"phone": "+49 151 5812 2294"
 			}
 		]
 	},
